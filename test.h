@@ -1,5 +1,5 @@
 /***********************************************************************
- * Heaader File:
+ * Header File:
  *    Test : Test runner
  * Author:
  *    Br. Helfrich
