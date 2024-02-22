@@ -8,7 +8,7 @@
  * 4. What was the hardest part? Be as specific as possible.
  *      ??
  * 5. How long did it take for you to complete the assignment?
- *      ??
+ *      So far we've worked on it for only two hours
  *****************************************************************/
 
 #include <cassert>      // for ASSERT
