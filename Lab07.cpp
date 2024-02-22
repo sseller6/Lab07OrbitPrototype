@@ -14,7 +14,8 @@
 #include <cassert>      // for ASSERT
 #include "uiInteract.h" // for INTERFACE
 #include "uiDraw.h"     // for RANDOM and DRAW*
-#include "position.h"      // for POINT
+#include "position.h"   // for POINT
+#include "physics.h"    // for PHYSICS
 using namespace std;
 
 /*************************************************************************
@@ -43,7 +44,8 @@ public:
 //      ptShip.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
 
       ptGPS.setPixelsX(0);
-      ptGPS.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
+      ptGPS.setPixelsY(35786000.0 / 128000.0);
+      velGPS = -3100;
 
       ptStar.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
       ptStar.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
@@ -59,6 +61,7 @@ public:
 //   Position ptCrewDragon;
 //   Position ptShip;
    Position ptGPS;
+   double velGPS;
    Position ptStar;
    Position ptUpperRight;
 
@@ -102,8 +105,25 @@ void callBack(const Interface* pUI, void* p)
 
    // rotate the earth
    pDemo->angleEarth += 0.01;
-   pDemo->angleShip += 0.02;
+   pDemo->angleShip += 0.01;
    pDemo->phaseStar++;
+   
+   // do physics stuff
+   double height = Physics::heightFromPosition(pDemo->ptGPS);
+   double grav = Physics::gravityFromHeight(height);
+   double dir = Physics::directionOfGravity(pDemo->ptGPS);
+   
+   double velX = pDemo->velGPS * sin(dir);
+   double velY = pDemo->velGPS * cos(dir);
+   
+   double accX = Physics::accelerationX(grav, dir);
+   double accY = Physics::accelerationY(grav, dir);
+   
+   double newX = Physics::computeNewX(pDemo->ptGPS, velX, accX);
+   double newY = Physics::computeNewY(pDemo->ptGPS, velY, accY);
+   
+   pDemo->ptGPS.setMeters(newX, newY);
+   
 
    //
    // draw everything
@@ -152,6 +172,11 @@ void callBack(const Interface* pUI, void* p)
 }
 
 double Position::metersFromPixels = 40.0;
+double Physics::t = 48;
+double Physics::g = -9.80665;
+double Physics::r = 6378000;
+double Physics::earthX = 0;
+double Physics::earthY = 0;
 
 /*********************************
  * Initialize the simulation and set it in motion
