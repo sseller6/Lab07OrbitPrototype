@@ -6,7 +6,7 @@
  * 3. Assignment Description:
  *      Simulate satellites orbiting the earth
  * 4. What was the hardest part? Be as specific as possible.
- *      ??
+ *      Figuring out what we did wrong in our math.
  * 5. How long did it take for you to complete the assignment?
  *      ??
  *****************************************************************/
