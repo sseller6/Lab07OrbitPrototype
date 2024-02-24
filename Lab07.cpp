@@ -30,21 +30,23 @@ class Demo
 public:
    Demo(Position ptUpperRight) : ptUpperRight(ptUpperRight)
    {
-      Position posGPS = Position(0.0, 42164000.0);
-      Velocity velGPS = Velocity(-3100.0, 0.0);
-      shipGPS = GPS();
-      shipGPS.setPosition(posGPS);
-      shipGPS.setVelocity(velGPS);
+      double speedGPS = 3100.0;
+      double angleGPS = M_PI / 6.0;  // π/6
+      Position posGPS = Position(42164000 * sin(angleGPS), 42164000 * cos(angleGPS));
+      Velocity velGPS = Velocity();
+      velGPS.setAngleMag(angleGPS - (M_PI / 2), speedGPS);
+      shipGPS = new GPS();
+      shipGPS->setPosition(posGPS);
+      shipGPS->setVelocity(velGPS);
 
-      ptStar.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-      ptStar.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
+      ptStar.setMeters(posGPS.getMetersX(), posGPS.getMetersY());
       
       angleShip = 0.0;
       angleEarth = 0.0;
       phaseStar = 0;
    }
    
-   GPS shipGPS;
+   GPS * shipGPS;
    Position ptStar;
    Position ptUpperRight;
 
@@ -68,6 +70,7 @@ void callBack(const Interface* pUI, void* p)
    
    // FOR FUTURE REFERENCE
    // Ships to add: Hubble, Sputnik, Starlink, CrewDragon, Ship
+   
    Demo* pDemo = (Demo*)p;
 
    //
@@ -90,17 +93,17 @@ void callBack(const Interface* pUI, void* p)
    //
 
    // rotate the earth
-   pDemo->angleEarth += 0.01;
+   pDemo->angleEarth -= 0.01;
    
    // rotate the ship
    pDemo->angleShip += 0.01;
-   pDemo->shipGPS.rotate();
+//   pDemo->shipGPS->rotate(false);
    
    // phase up the star
    pDemo->phaseStar++;
    
    // do physics stuff
-   pDemo->shipGPS.update();
+   pDemo->shipGPS->update();
    
 
    //
@@ -111,14 +114,14 @@ void callBack(const Interface* pUI, void* p)
    ogstream gout(pt);
 
    // draw satellites
-   pDemo->shipGPS.draw(gout);
+   pDemo->shipGPS->draw(gout);
 
    // draw a single star
    gout.drawStar(pDemo->ptStar, pDemo->phaseStar);
 
    // draw the earth
    pt.setMeters(Physics::getEarthX(), Physics::getEarthY());
-//   gout.drawEarth(pt, pDemo->angleEarth);
+   gout.drawEarth(pt, pDemo->angleEarth);
 }
 
 // Good spot to set our static variables.

@@ -15,6 +15,7 @@ void GPS::update()
    double dir = Physics::directionOfGravity(pos);
    
    acc.setAngleMag(dir, grav);
+   acc.reverse();
    
    double newDx = Physics::computeNewDx(vel, acc);
    double newDy = Physics::computeNewDy(vel, acc);
@@ -29,5 +30,5 @@ void GPS::update()
 
 void GPS::draw(ogstream &gout) const
 {
-   gout.drawGPS(Position(0.0, 0.0), rotation);
+   gout.drawGPS(pos, rotation);
 }
