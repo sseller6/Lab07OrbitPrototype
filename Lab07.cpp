@@ -16,6 +16,9 @@
 #include "uiDraw.h"     // for RANDOM and DRAW*
 #include "position.h"   // for POINT
 #include "physics.h"    // for PHYSICS
+
+// Ship classes
+#include "shipGPS.h"
 using namespace std;
 
 /*************************************************************************
@@ -25,43 +28,23 @@ using namespace std;
 class Demo
 {
 public:
-   Demo(Position ptUpperRight) :
-      ptUpperRight(ptUpperRight)
+   Demo(Position ptUpperRight) : ptUpperRight(ptUpperRight)
    {
-//      ptHubble.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-//      ptHubble.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-//
-//      ptSputnik.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-//      ptSputnik.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-//
-//      ptStarlink.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-//      ptStarlink.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-//
-//      ptCrewDragon.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-//      ptCrewDragon.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-//
-//      ptShip.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
-//      ptShip.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-
-      ptGPS.setPixelsX(0);
-      ptGPS.setPixelsY(35786000.0 / 128000.0);
-      velGPS = -3100;
+      Position posGPS = Position(0.0, 42164000.0);
+      Velocity velGPS = Velocity(-3100.0, 0.0);
+      shipGPS = GPS();
+      shipGPS.setPosition(posGPS);
+      shipGPS.setVelocity(velGPS);
 
       ptStar.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
       ptStar.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-
+      
       angleShip = 0.0;
       angleEarth = 0.0;
       phaseStar = 0;
    }
-
-//   Position ptHubble;
-//   Position ptSputnik;
-//   Position ptStarlink;
-//   Position ptCrewDragon;
-//   Position ptShip;
-   Position ptGPS;
-   double velGPS;
+   
+   GPS shipGPS;
    Position ptStar;
    Position ptUpperRight;
 
@@ -82,6 +65,9 @@ void callBack(const Interface* pUI, void* p)
 {
    // the first step is to cast the void pointer into a game object. This
    // is the first step of every single callback function in OpenGL. 
+   
+   // FOR FUTURE REFERENCE
+   // Ships to add: Hubble, Sputnik, Starlink, CrewDragon, Ship
    Demo* pDemo = (Demo*)p;
 
    //
@@ -105,24 +91,16 @@ void callBack(const Interface* pUI, void* p)
 
    // rotate the earth
    pDemo->angleEarth += 0.01;
+   
+   // rotate the ship
    pDemo->angleShip += 0.01;
+   pDemo->shipGPS.rotate();
+   
+   // phase up the star
    pDemo->phaseStar++;
    
    // do physics stuff
-   double height = Physics::heightFromPosition(pDemo->ptGPS);
-   double grav = Physics::gravityFromHeight(height);
-   double dir = Physics::directionOfGravity(pDemo->ptGPS);
-   
-   double velX = pDemo->velGPS * sin(dir);
-   double velY = pDemo->velGPS * cos(dir);
-   
-   double accX = Physics::accelerationX(grav, dir);
-   double accY = Physics::accelerationY(grav, dir);
-   
-   double newX = Physics::computeNewX(pDemo->ptGPS, velX, accX);
-   double newY = Physics::computeNewY(pDemo->ptGPS, velY, accY);
-   
-   pDemo->ptGPS.setMeters(newX, newY);
+   pDemo->shipGPS.update();
    
 
    //
@@ -133,44 +111,17 @@ void callBack(const Interface* pUI, void* p)
    ogstream gout(pt);
 
    // draw satellites
-//   gout.drawCrewDragon(pDemo->ptCrewDragon, pDemo->angleShip);
-//   gout.drawHubble    (pDemo->ptHubble,     pDemo->angleShip);
-//   gout.drawSputnik   (pDemo->ptSputnik,    pDemo->angleShip);
-//   gout.drawStarlink  (pDemo->ptStarlink,   pDemo->angleShip);
-//   gout.drawShip      (pDemo->ptShip,       pDemo->angleShip, pUI->isSpace());
-   
-   gout.drawGPS       (pDemo->ptGPS,        pDemo->angleShip);
-
-   // draw parts
-//   pt.setPixelsX(pDemo->ptCrewDragon.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptCrewDragon.getPixelsY() + 20);
-//   gout.drawCrewDragonRight(pt, pDemo->angleShip); // notice only two parameters are set
-//   pt.setPixelsX(pDemo->ptHubble.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptHubble.getPixelsY() + 20);
-//   gout.drawHubbleLeft(pt, pDemo->angleShip);      // notice only two parameters are set
-//   pt.setPixelsX(pDemo->ptGPS.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptGPS.getPixelsY() + 20);
-//   gout.drawGPSCenter(pt, pDemo->angleShip);       // notice only two parameters are set
-//   pt.setPixelsX(pDemo->ptStarlink.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptStarlink.getPixelsY() + 20);
-//   gout.drawStarlinkArray(pt, pDemo->angleShip);   // notice only two parameters are set
-
-   // draw fragments
-//   pt.setPixelsX(pDemo->ptSputnik.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptSputnik.getPixelsY() + 20);
-//   gout.drawFragment(pt, pDemo->angleShip);
-//   pt.setPixelsX(pDemo->ptShip.getPixelsX() + 20);
-//   pt.setPixelsY(pDemo->ptShip.getPixelsY() + 20);
-//   gout.drawFragment(pt, pDemo->angleShip);
+   pDemo->shipGPS.draw(gout);
 
    // draw a single star
    gout.drawStar(pDemo->ptStar, pDemo->phaseStar);
 
    // draw the earth
-   pt.setMeters(0.0, 0.0);
-   gout.drawEarth(pt, pDemo->angleEarth);
+   pt.setMeters(Physics::getEarthX(), Physics::getEarthY());
+//   gout.drawEarth(pt, pDemo->angleEarth);
 }
 
+// Good spot to set our static variables.
 double Position::metersFromPixels = 40.0;
 double Physics::t = 48;
 double Physics::g = -9.80665;

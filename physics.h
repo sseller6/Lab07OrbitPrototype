@@ -10,17 +10,24 @@
 
 #pragma once
 #include "position.h"
+#include "velocity.h"
+#include "acceleration.h"
 
 class Physics
 {
 public:
+   // physics equations
    static double heightFromPosition(Position &pos);
    static double gravityFromHeight(double height);
    static double directionOfGravity(Position &pos);
-   static double accelerationX(double acc, double angle);
-   static double accelerationY(double acc, double angle);
-   static double computeNewX(Position &pos, double velX, double accX);
-   static double computeNewY(Position &pos, double velY, double accY);
+   static double computeNewDx(Velocity &vel, Acceleration &acc);
+   static double computeNewDy(Velocity &vel, Acceleration &acc);
+   static double computeNewX(Position &pos, Velocity &vel, Acceleration &acc);
+   static double computeNewY(Position &pos, Velocity &vel, Acceleration &acc);
+   
+   // getters
+   static double getEarthX() { return earthX; }
+   static double getEarthY() { return earthY; }
    
 private:
    static double t;
