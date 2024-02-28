@@ -93,7 +93,7 @@ void callBack(const Interface* pUI, void* p)
    //
 
    // rotate the earth
-   pDemo->angleEarth -= 0.01;
+   pDemo->angleEarth -= (2 * M_PI) / (double)1800;
    
    // rotate the ship
    pDemo->angleShip += 0.01;

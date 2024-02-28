@@ -14,6 +14,7 @@ void GPS::update()
    double grav = Physics::gravityFromHeight(height);
    double dir = Physics::directionOfGravity(pos);
    
+   Acceleration acc = Acceleration();
    acc.setAngleMag(dir, grav);
    acc.reverse();
    

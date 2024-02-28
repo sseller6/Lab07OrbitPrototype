@@ -17,16 +17,13 @@ class GPS
 public:
    GPS() : pos(Position()),
            vel(Velocity()),
-           acc(Acceleration()),
            rotation(0) {}
    GPS(Position &pos) : pos(pos),
                         vel(Velocity()),
-                        acc(Acceleration()),
                         rotation(0) {}
    
-   void setPosition(Position &pos)         { this->pos = pos; }
-   void setVelocity(Velocity &vel)         { this->vel = vel; }
-   void setAcceleration(Acceleration &acc) { this->acc = acc; }
+   void setPosition(Position &pos) { this->pos = pos; }
+   void setVelocity(Velocity &vel) { this->vel = vel; }
    
    void rotate(bool clockwise = true) { rotation += clockwise ? 0.01 : -0.01; }
    void setRotation(double rotation) { this->rotation = rotation; }
@@ -37,7 +34,6 @@ public:
 private:
    Position pos;
    Velocity vel;
-   Acceleration acc;
    double rotation;
    
 };

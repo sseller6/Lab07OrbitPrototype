@@ -10,7 +10,9 @@
 // The height of the spacecraft is the distance between it and the surface of the earth.
 double Physics::heightFromPosition(Position &pos)
 {
-   return sqrt(pow(pos.getMetersX(), 2) + pow(pos.getMetersY(), 2)) - r;
+   double posX = pos.getMetersX();
+   double posY = pos.getMetersY();
+   return sqrt(pow(posX, 2) + pow(posY, 2)) - r;
 }
 
 // Use "big g" to calculate the pull of gravity at the height of the spacecraft.
