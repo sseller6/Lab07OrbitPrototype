@@ -11,14 +11,19 @@
  *      ??
  *****************************************************************/
 
+#define _USE_MATH_DEFINES
+
 #include <cassert>      // for ASSERT
+#include <cmath>        // for Pies :) Yum
 #include "uiInteract.h" // for INTERFACE
 #include "uiDraw.h"     // for RANDOM and DRAW*
 #include "position.h"   // for POINT
 #include "physics.h"    // for PHYSICS
+#include "earth.h"      // for EARTH
+
 
 // Ship classes
-#include "shipGPS.h"
+#include "GPS.h"
 using namespace std;
 
 /*************************************************************************
@@ -127,10 +132,10 @@ void callBack(const Interface* pUI, void* p)
 // Good spot to set our static variables.
 double Position::metersFromPixels = 40.0;
 double Physics::t = 48;
-double Physics::g = -9.80665;
-double Physics::r = 6378000;
 double Physics::earthX = 0;
 double Physics::earthY = 0;
+double Earth::gravity = -9.80665;
+double Earth::radius = 6378000;
 
 /*********************************
  * Initialize the simulation and set it in motion
