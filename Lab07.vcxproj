@@ -165,6 +165,7 @@
     <ClInclude Include="uiDraw.h" />
     <ClInclude Include="uiInteract.h" />
     <ClInclude Include="velocity.h" />
+    <ClInclude Include="whole.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".DS_Store" />

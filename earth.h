@@ -15,18 +15,19 @@
 class Earth
 {
 public:
-   Earth() : pos(Position(0.0, 0.0)), rotation(Direction(0.0)) { }
+   Earth() : rotation(Direction(0.0)) { }
 
    // getters
-   double getRadius()  const { return radius;  }
-   double getGravity() const { return gravity; }
+   static double getRadius()  { return radius;  }
+   static double getGravity() { return gravity; }
+   static Position getPos()   { return pos;     }
 
    // Misc
    void rotate() { rotation.addAngle(0.01); }
    void draw(ogstream &gout) const { gout.drawEarth(pos, rotation.getAngle()); }
 
 private:
-   Position pos;
+   static Position pos;
    Direction rotation;
    static double radius;
    static double gravity;

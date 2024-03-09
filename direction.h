@@ -33,6 +33,10 @@ public:
    // Misc
    void addAngle(double angle) { this->angle += angle; }
 
+   // Operators
+   Direction operator+ (const Direction &rhs) const { return Direction(rhs.angle + angle); }
+   void operator+= (const Direction & rhs) { angle += rhs.angle; }
+
 private:
    void normalize();
 

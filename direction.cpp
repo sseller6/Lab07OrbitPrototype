@@ -1,5 +1,5 @@
 /***********************************************************************
- * Header File:
+ * Source File:
  *    Direction : The representation of a direction.
  * Author:
  *    Josh & Steven

@@ -136,6 +136,7 @@ double Physics::earthX = 0;
 double Physics::earthY = 0;
 double Earth::gravity = -9.80665;
 double Earth::radius = 6378000;
+Position Earth::pos = Position(0.0, 0.0);
 
 /*********************************
  * Initialize the simulation and set it in motion

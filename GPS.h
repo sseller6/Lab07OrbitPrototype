@@ -12,28 +12,16 @@
 #include "acceleration.h"
 #include "physics.h"
 
-class GPS
+#include "whole.h"
+
+class GPS : public Whole
 {
 public:
-   GPS() : pos(Position()),
-           vel(Velocity()),
-           rotation(0) {}
-   GPS(Position &pos) : pos(pos),
-                        vel(Velocity()),
-                        rotation(0) {}
+   GPS() : Whole() {}
+   GPS(Position &pos, Velocity &vel, Direction &dir) : Whole(pos, vel, dir) {}
    
-   void setPosition(Position &pos) { this->pos = pos; }
-   void setVelocity(Velocity &vel) { this->vel = vel; }
-   
-   void rotate(bool clockwise = true) { rotation += clockwise ? 0.01 : -0.01; }
-   void setRotation(double rotation) { this->rotation = rotation; }
+
    
    void update();
    void draw(ogstream &gout) const;
-   
-private:
-   Position pos;
-   Velocity vel;
-   double rotation;
-   
 };

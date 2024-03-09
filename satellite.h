@@ -14,6 +14,7 @@
 #include "uiInteract.h"
 #include "position.h"
 #include "velocity.h"
+#include "acceleration.h"
 #include "direction.h"
 
 class Satellite
@@ -21,20 +22,27 @@ class Satellite
 public:
    // constructors
    Satellite()  { }
+   Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir) { }
    
    // getters
-   float getRadius() const { return radius; }
+   //float getRadius() const { return radius; }
    Position getPosition() const { return pos; }
    
    // living state
-   bool isDead() const { return dead; }
-   void kill()   { dead = true; }
+   //bool isDead() const { return dead; }
+   //void kill()   { dead = true; }
+
+   // misc   
+   void move(float time);
+   void setRotation(Direction rotation) { dir = rotation; }
+   void rotate(double amount, bool clockwise = true) { dir += (clockwise ? amount : -amount); }
+   void rotate(Direction dir) { this->dir += dir; }
 
    // virtuals
-   virtual void draw(ogstream &gout) { }
-   virtual void move(float time)     { }
-   virtual void input(ogstream &ui)  { }
-   //virtual void destroy()            { }
+   virtual void draw(ogstream &gout)  { }
+   //virtual void breakApart()          { }
+   //virtual void input(ogstream &ui)   { }
+   //virtual void destroy()             { }
 
 
 private:
@@ -43,4 +51,16 @@ private:
    Direction dir;
    //bool dead;
    //float radius;
+
+   class Physics
+   {
+   public:
+      double heightFromPosition(Position& pos);
+      double gravityFromHeight(double height);
+      double directionOfGravity(Position& pos);
+      double computeNewDx(Velocity& vel, Acceleration& acc, double time);
+      double computeNewDy(Velocity& vel, Acceleration& acc, double time);
+      double computeNewX(Position& pos, Velocity& vel, Acceleration& acc, double time);
+      double computeNewY(Position& pos, Velocity& vel, Acceleration& acc, double time);
+   };
 };
