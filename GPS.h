@@ -19,9 +19,7 @@ class GPS : public Whole
 public:
    GPS() : Whole() {}
    GPS(Position &pos, Velocity &vel, Direction &dir) : Whole(pos, vel, dir) {}
-   
 
-   
-   void update();
+   void rotate(bool clockwise = true);
    void draw(ogstream &gout) const;
 };

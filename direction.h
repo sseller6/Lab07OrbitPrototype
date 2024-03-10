@@ -35,7 +35,9 @@ public:
 
    // Operators
    Direction operator+ (const Direction &rhs) const { return Direction(rhs.angle + angle); }
+   Direction operator+ (double &rhs) const { return Direction(rhs + angle); }
    void operator+= (const Direction & rhs) { angle += rhs.angle; }
+   void operator+= (double & rhs) { angle += rhs; }
 
 private:
    void normalize();

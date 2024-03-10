@@ -17,10 +17,10 @@ void Satellite::move(float time)
    // Every calculation is affected by gravity.
    double height = p.heightFromPosition(pos);
    double grav = p.gravityFromHeight(height);
-   double dir = p.directionOfGravity(pos);
+   double dirGrav = p.directionOfGravity(pos);
 
    Acceleration acc = Acceleration();
-   acc.setAngleMag(dir, grav);
+   acc.setAngleMag(dirGrav, grav);
    acc.reverse();
 
    double newDx = p.computeNewDx(vel, acc, time);

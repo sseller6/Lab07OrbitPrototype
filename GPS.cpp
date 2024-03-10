@@ -7,7 +7,19 @@
 
 #include "GPS.h"
 
+void GPS::rotate(bool clockwise)
+{
+   if (clockwise)
+   {
+      dir += 0.01;
+   }
+   else
+   {
+      dir += -0.01;
+   }
+}
+
 void GPS::draw(ogstream &gout) const
 {
-   gout.drawGPS(pos, rotation);
+   gout.drawGPS(pos, dir.getAngle());
 }

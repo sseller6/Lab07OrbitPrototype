@@ -17,9 +17,13 @@
 #include "acceleration.h"
 #include "direction.h"
 
+class TestSatellite;
+
 class Satellite
 {
 public:
+   friend TestSatellite;
+
    // constructors
    Satellite()  { }
    Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir) { }
@@ -35,17 +39,16 @@ public:
    // misc   
    void move(float time);
    void setRotation(Direction rotation) { dir = rotation; }
-   void rotate(double amount, bool clockwise = true) { dir += (clockwise ? amount : -amount); }
-   void rotate(Direction dir) { this->dir += dir; }
 
    // virtuals
-   virtual void draw(ogstream &gout)  { }
-   //virtual void breakApart()          { }
-   //virtual void input(ogstream &ui)   { }
-   //virtual void destroy()             { }
+   virtual void rotate(bool clockwise = true) { }
+   virtual void draw(ogstream &gout)          { }
+   //virtual void breakApart()                  { }
+   //virtual void input(ogstream &ui)           { }
+   //virtual void destroy()                     { }
 
 
-private:
+protected:
    Position pos;
    Velocity vel;
    Direction dir;

@@ -15,15 +15,16 @@
 
 #include <cassert>      // for ASSERT
 #include <cmath>        // for Pies :) Yum
+#include <random>       // we so random
 #include "uiInteract.h" // for INTERFACE
 #include "uiDraw.h"     // for RANDOM and DRAW*
+#include "test.h"
 #include "position.h"   // for POINT
 #include "physics.h"    // for PHYSICS
 #include "earth.h"      // for EARTH
+#include "GPS.h"        // for GPS
+#include "star.h"       // for STAR
 
-
-// Ship classes
-#include "GPS.h"
 using namespace std;
 
 /*************************************************************************
@@ -35,30 +36,35 @@ class Demo
 public:
    Demo(Position ptUpperRight) : ptUpperRight(ptUpperRight)
    {
+      // GPS
       double speedGPS = 3100.0;
       double angleGPS = M_PI / 6.0;  // π/6
       Position posGPS = Position(42164000 * sin(angleGPS), 42164000 * cos(angleGPS));
       Velocity velGPS = Velocity();
       velGPS.setAngleMag(angleGPS - (M_PI / 2), speedGPS);
-      shipGPS = new GPS();
-      shipGPS->setPosition(posGPS);
-      shipGPS->setVelocity(velGPS);
+      Direction dirGPS = Direction();
+      gps = GPS(posGPS, velGPS, dirGPS);
 
-      ptStar.setMeters(posGPS.getMetersX(), posGPS.getMetersY());
-      
-      angleShip = 0.0;
-      angleEarth = 0.0;
-      phaseStar = 0;
+      // 200 stars
+      double halfWidth =  ptUpperRight.getMetersX() / 2;
+      double halfHeight = ptUpperRight.getMetersY() / 2;
+      for (int i = 0; i < 200; i++)
+      {
+         double x = random(-halfWidth, halfWidth);
+         double y = random(-halfHeight, halfHeight);
+         Star newStar = Star(x, y);
+         newStar.setPhase(random(0, 255));
+         stars[i] = newStar;
+      }
+
+      // earth
+      earth = Earth();
    }
    
-   GPS * shipGPS;
-   Position ptStar;
+   GPS gps;
+   Star stars[200];
+   Earth earth;
    Position ptUpperRight;
-
-   unsigned char phaseStar;
-
-   double angleShip;
-   double angleEarth;
 };
 
 /*************************************
@@ -71,11 +77,7 @@ public:
 void callBack(const Interface* pUI, void* p)
 {
    // the first step is to cast the void pointer into a game object. This
-   // is the first step of every single callback function in OpenGL. 
-   
-   // FOR FUTURE REFERENCE
-   // Ships to add: Hubble, Sputnik, Starlink, CrewDragon, Ship
-   
+   // is the first step of every single callback function in OpenGL.    
    Demo* pDemo = (Demo*)p;
 
    //
@@ -98,17 +100,19 @@ void callBack(const Interface* pUI, void* p)
    //
 
    // rotate the earth
-   pDemo->angleEarth -= (2 * M_PI) / (double)1800;
+   pDemo->earth.rotate((2 * M_PI) / (double)1800);
    
-   // rotate the ship
-   pDemo->angleShip += 0.01;
-//   pDemo->shipGPS->rotate(false);
+   // rotate the satellites
+   pDemo->gps.rotate();
    
-   // phase up the star
-   pDemo->phaseStar++;
+   // phase up the stars
+   for (int i = 0; i < 200; i++)
+   {
+      pDemo->stars[i].phaseUp();
+   }
    
    // do physics stuff
-   pDemo->shipGPS->update();
+   pDemo->gps.move(48);
    
 
    //
@@ -119,21 +123,21 @@ void callBack(const Interface* pUI, void* p)
    ogstream gout(pt);
 
    // draw satellites
-   pDemo->shipGPS->draw(gout);
+   pDemo->gps.draw(gout);
 
-   // draw a single star
-   gout.drawStar(pDemo->ptStar, pDemo->phaseStar);
+   // draw stars
+   for (int i = 0; i < 200; i++)
+   {
+      pDemo->stars[i].draw(gout);
+   }
 
    // draw the earth
-   pt.setMeters(Physics::getEarthX(), Physics::getEarthY());
-   gout.drawEarth(pt, pDemo->angleEarth);
+   pDemo->earth.draw(gout);
 }
 
 // Good spot to set our static variables.
 double Position::metersFromPixels = 40.0;
-double Physics::t = 48;
-double Physics::earthX = 0;
-double Physics::earthY = 0;
+
 double Earth::gravity = -9.80665;
 double Earth::radius = 6378000;
 Position Earth::pos = Position(0.0, 0.0);
@@ -152,6 +156,8 @@ int WINAPI wWinMain(
 int main(int argc, char** argv)
 #endif // !_WIN32
 {
+   testRunner();
+
    // Initialize OpenGL
    Position ptUpperRight;
    ptUpperRight.setZoom(128000.0 /* 128km equals 1 pixel */);

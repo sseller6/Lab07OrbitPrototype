@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,52 +35,8 @@
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:direction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\earth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:earth.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:direction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\whole.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:whole.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:velocity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:velocity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\acceleration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:acceleration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,199 +46,125 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GPS.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.h",
-              "RelativeDocumentMoniker": "GPS.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.h",
-              "RelativeToolTip": "GPS.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-08T21:22:59.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "satellite.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.h",
-              "RelativeDocumentMoniker": "satellite.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.h",
-              "RelativeToolTip": "satellite.h",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-08T21:26:55.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "satellite.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.cpp",
-              "RelativeDocumentMoniker": "satellite.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.cpp",
-              "RelativeToolTip": "satellite.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-08T21:24:46.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "physics.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\physics.cpp",
-              "RelativeDocumentMoniker": "physics.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\physics.cpp",
-              "RelativeToolTip": "physics.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-23T21:36:01.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "earth.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\earth.h",
-              "RelativeDocumentMoniker": "earth.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\earth.h",
-              "RelativeToolTip": "earth.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-09T20:16:27.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "position.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.h",
-              "RelativeDocumentMoniker": "position.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.h",
-              "RelativeToolTip": "position.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAgAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-08T21:26:59.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "direction.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.cpp",
-              "RelativeDocumentMoniker": "direction.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.cpp",
-              "RelativeToolTip": "direction.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-08T21:34:02.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "direction.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.h",
-              "RelativeDocumentMoniker": "direction.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\direction.h",
-              "RelativeToolTip": "direction.h",
-              "ViewState": "AQIAABAAAAAAAAAAAAAiwCsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-08T21:32:04.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GPS.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.cpp",
-              "RelativeDocumentMoniker": "GPS.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.cpp",
-              "RelativeToolTip": "GPS.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-08T21:20:38.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Lab07.cpp",
               "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\Lab07.cpp",
               "RelativeDocumentMoniker": "Lab07.cpp",
               "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\Lab07.cpp",
               "RelativeToolTip": "Lab07.cpp",
-              "ViewState": "AQIAAHgAAAAAAAAAAAASwIoAAAApAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAJ4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-02-23T21:22:25.013Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "whole.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\whole.h",
-              "RelativeDocumentMoniker": "whole.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\whole.h",
-              "RelativeToolTip": "whole.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA+AAAA",
+              "DocumentIndex": 2,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\test.cpp",
+              "RelativeDocumentMoniker": "test.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\test.cpp",
+              "RelativeToolTip": "test.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-09T23:49:10.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "unitTest.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\unitTest.h",
+              "RelativeDocumentMoniker": "unitTest.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\unitTest.h",
+              "RelativeToolTip": "unitTest.h",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwBoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-09T19:47:44.214Z",
+              "WhenOpened": "2024-03-09T21:53:42.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "position.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.cpp",
-              "RelativeDocumentMoniker": "position.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\position.cpp",
-              "RelativeToolTip": "position.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-08T21:25:14.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "velocity.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.h",
-              "RelativeDocumentMoniker": "velocity.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.h",
-              "RelativeToolTip": "velocity.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "DocumentIndex": 1,
+              "Title": "testSatellite.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.h",
+              "RelativeDocumentMoniker": "testSatellite.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.h",
+              "RelativeToolTip": "testSatellite.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-02-29T20:57:56.23Z"
+              "WhenOpened": "2024-03-09T21:49:20.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "velocity.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.cpp",
-              "RelativeDocumentMoniker": "velocity.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\velocity.cpp",
-              "RelativeToolTip": "velocity.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "testSatellite.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.cpp",
+              "RelativeDocumentMoniker": "testSatellite.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\testSatellite.cpp",
+              "RelativeToolTip": "testSatellite.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-29T21:03:20.205Z"
+              "WhenOpened": "2024-03-09T22:39:18.125Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "acceleration.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\acceleration.cpp",
-              "RelativeDocumentMoniker": "acceleration.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\acceleration.cpp",
-              "RelativeToolTip": "acceleration.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "GPS.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.h",
+              "RelativeDocumentMoniker": "GPS.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.h",
+              "RelativeToolTip": "GPS.h",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-09T21:43:18.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GPS.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.cpp",
+              "RelativeDocumentMoniker": "GPS.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\GPS.cpp",
+              "RelativeToolTip": "GPS.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-02-29T20:59:15.986Z"
+              "WhenOpened": "2024-03-09T22:44:29.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "satellite.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.h",
+              "RelativeDocumentMoniker": "satellite.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.h",
+              "RelativeToolTip": "satellite.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-09T21:36:21.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "satellite.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.cpp",
+              "RelativeDocumentMoniker": "satellite.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\Lab07OrbitPrototype\\satellite.cpp",
+              "RelativeToolTip": "satellite.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-09T22:42:56.349Z",
+              "EditorCaption": ""
             }
           ]
         }

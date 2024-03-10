@@ -23,7 +23,7 @@ public:
    static Position getPos()   { return pos;     }
 
    // Misc
-   void rotate() { rotation.addAngle(0.01); }
+   void rotate(double amount) { rotation += amount; }
    void draw(ogstream &gout) const { gout.drawEarth(pos, rotation.getAngle()); }
 
 private:
