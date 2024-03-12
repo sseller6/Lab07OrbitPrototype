@@ -10,6 +10,14 @@
 #include "satellite.h"
 #include "earth.h"
 
+void Satellite::operator= (Satellite& rhs) 
+{
+   pos = rhs.pos;
+   vel = rhs.vel;
+   dir = rhs.dir; 
+}
+
+
 void Satellite::move(float time)
 {
    Physics p;

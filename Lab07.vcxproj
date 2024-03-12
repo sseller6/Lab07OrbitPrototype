@@ -150,6 +150,7 @@
     <ClCompile Include="uiDraw.cpp" />
     <ClCompile Include="uiInteract.cpp" />
     <ClCompile Include="velocity.cpp" />
+    <ClCompile Include="whole.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acceleration.h" />

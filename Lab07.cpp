@@ -39,11 +39,12 @@ public:
       // GPS
       double speedGPS = 3100.0;
       double angleGPS = M_PI / 6.0;  // π/6
-      Position posGPS = Position(42164000 * sin(angleGPS), 42164000 * cos(angleGPS));
-      Velocity velGPS = Velocity();
+      Position posGPS(42164000 * sin(angleGPS), 42164000 * cos(angleGPS));
+      Velocity velGPS;
       velGPS.setAngleMag(angleGPS - (M_PI / 2), speedGPS);
-      Direction dirGPS = Direction();
-      gps = GPS(posGPS, velGPS, dirGPS);
+      Direction dirGPS;
+      GPS g (posGPS, velGPS, dirGPS);
+      gps = g;
 
       // 200 stars
       double halfWidth =  ptUpperRight.getMetersX() / 2;
@@ -58,7 +59,7 @@ public:
       }
 
       // earth
-      earth = Earth();
+      //earth = Earth();
    }
    
    GPS gps;

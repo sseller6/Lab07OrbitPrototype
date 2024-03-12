@@ -15,6 +15,10 @@
 class Whole : public Satellite
 {
 public:
+   // constructors
    Whole() : Satellite() { }
    Whole(Position &pos, Velocity &vel, Direction &dir) : Satellite(pos, vel, dir) { }
+
+   // operators
+   void operator= (Whole& rhs);
 };

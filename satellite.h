@@ -47,6 +47,8 @@ public:
    //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }
 
+   // operators
+   void operator= (Satellite& rhs);
 
 protected:
    Position pos;
@@ -66,4 +68,13 @@ protected:
       double computeNewX(Position& pos, Velocity& vel, Acceleration& acc, double time);
       double computeNewY(Position& pos, Velocity& vel, Acceleration& acc, double time);
    };
+};
+
+class SatelliteFake : Satellite
+{
+public:
+
+
+private:
+
 };

@@ -17,9 +17,14 @@
 class GPS : public Whole
 {
 public:
+   // constructors
    GPS() : Whole() {}
    GPS(Position &pos, Velocity &vel, Direction &dir) : Whole(pos, vel, dir) {}
 
+   // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream &gout) const;
+
+   // operators
+   GPS& operator= (GPS& rhs);
 };

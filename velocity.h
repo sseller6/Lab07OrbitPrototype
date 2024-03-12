@@ -13,6 +13,7 @@ class Velocity
 public:
    Velocity() : dx(0.0), dy(0.0) {}
    Velocity(double dx, double dy) : dx(dx), dy(dy) {}
+   Velocity(const Velocity& v) : dx (v.dx), dy (v.dy){}
    
    double getDx() const { return dx; }
    double getDy() const { return dy; }

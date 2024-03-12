@@ -7,6 +7,15 @@
 
 #include "GPS.h"
 
+GPS& GPS::operator= (GPS& rhs)
+{
+   pos = rhs.pos;
+   vel = rhs.vel;
+   dir = rhs.dir;
+
+   return *this;
+}
+
 void GPS::rotate(bool clockwise)
 {
    if (clockwise)
