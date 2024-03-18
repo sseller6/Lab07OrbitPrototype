@@ -17,7 +17,7 @@ class Star
 public:
    // constructor
    Star() : pos(Position(0.0, 0.0)), phase(0) { }
-   Star(Position &pos) : pos(pos) { }
+   Star(Position &pos) : pos(pos), phase(0) { }
    Star(double x, double y) : pos(Position(x, y)), phase(0) { }
    
    // setters

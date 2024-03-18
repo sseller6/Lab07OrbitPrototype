@@ -1,16 +1,17 @@
-//
-//  shipGPS.hpp
-//  Lab07
-//
-//  Created by Josh Hamilton on 2/23/24.
-//
+/***********************************************************************
+ * Header File:
+ *    GPS : The representation of a child class, GPS.
+ * Author:
+ *    Josh & Steven
+ * Summary:
+ *    The GPS inherits from the Whole class.
+ ************************************************************************/
 
 #pragma once
 #include "uiDraw.h"
 #include "position.h"
 #include "velocity.h"
 #include "acceleration.h"
-#include "physics.h"
 
 #include "whole.h"
 

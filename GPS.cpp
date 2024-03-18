@@ -1,9 +1,11 @@
-//
-//  shipGPS.cpp
-//  Lab07
-//
-//  Created by Josh Hamilton on 2/23/24.
-//
+/***********************************************************************
+ * Source File:
+ *    GPS : The representation of a child class, GPS.
+ * Author:
+ *    Josh & Steven
+ * Summary:
+ *    The GPS inherits from the Whole class.
+ ************************************************************************/
 
 #include "GPS.h"
 

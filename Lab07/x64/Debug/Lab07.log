@@ -1,2 +1,9 @@
-﻿  testSatellite.cpp
+﻿  Lab07.cpp
+  GPS.cpp
+  satellite.cpp
+  sputnik.cpp
+  test.cpp
+  testSatellite.cpp
+  whole.cpp
+  Generating Code...
   Lab07.vcxproj -> C:\programmingProjects\PublicRepos\Lab07OrbitPrototype\x64\Debug\Lab07.exe

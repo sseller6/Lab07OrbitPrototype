@@ -16,13 +16,14 @@
 #include <cassert>      // for ASSERT
 #include <cmath>        // for Pies :) Yum
 #include <random>       // we so random
+#include <vector>       // vectors are better :)
 #include "uiInteract.h" // for INTERFACE
 #include "uiDraw.h"     // for RANDOM and DRAW*
 #include "test.h"
 #include "position.h"   // for POINT
-#include "physics.h"    // for PHYSICS
 #include "earth.h"      // for EARTH
 #include "GPS.h"        // for GPS
+#include "sputnik.h"    // for Sputnik
 #include "star.h"       // for STAR
 
 using namespace std;
@@ -36,16 +37,33 @@ class Demo
 public:
    Demo(Position ptUpperRight) : ptUpperRight(ptUpperRight)
    {
-      // GPS
-      double speedGPS = 3100.0;
-      double angleGPS = M_PI / 6.0;  // π/6
-      Position posGPS(42164000 * sin(angleGPS), 42164000 * cos(angleGPS));
-      Velocity velGPS;
-      velGPS.setAngleMag(angleGPS - (M_PI / 2), speedGPS);
-      Direction dirGPS;
-      GPS g (posGPS, velGPS, dirGPS);
-      gps = g;
+      // GPS's
+      double GPSValues[6][4] = {
+         //      POS_X,     POS_Y, VEL_X,    VEL_Y
+         {           0,  26560000, -3880,        0},
+         { 23001634.72,  13280000, -1940,  3360.18},
+         { 23001634.72, -13280000,  1940,  3360.18},
+         {           0, -26560000,  3880,        0},
+         {-23001634.72, -13280000,  1940, -3360.18},
+         {-23001634.72,  13280000, -1940, -3360.18}
+      };
 
+      for (int i = 0; i < 6; i++)
+      {
+         Position posGPS(GPSValues[i][0], GPSValues[i][1]);
+         Velocity velGPS(GPSValues[i][2], GPSValues[i][3]);
+         Direction dirGPS(random(0.0, 2 * M_PI));
+         GPS g(posGPS, velGPS, dirGPS);
+         sats.push_back(g);
+      }
+      
+      // Sputnik
+      Position posSputnik(-36515095.13, 21082000);
+      Velocity velSputnik(2050, 2684.68);
+      Direction dirSputnik(random(0.0, 2 * M_PI));
+      Sputnik s(posSputnik, velSputnik, dirSputnik);
+      sats.push_back(s);
+      
       // 200 stars
       double halfWidth =  ptUpperRight.getMetersX() / 2;
       double halfHeight = ptUpperRight.getMetersY() / 2;
@@ -58,11 +76,13 @@ public:
          stars[i] = newStar;
       }
 
-      // earth
-      //earth = Earth();
+      for (Satellite sat : sats)
+      {
+         cout << sat.getString() << endl;
+      }
    }
    
-   GPS gps;
+   vector<Satellite> sats;
    Star stars[200];
    Earth earth;
    Position ptUpperRight;
@@ -104,7 +124,8 @@ void callBack(const Interface* pUI, void* p)
    pDemo->earth.rotate((2 * M_PI) / (double)1800);
    
    // rotate the satellites
-   pDemo->gps.rotate();
+   for (int i = 0; i < pDemo->sats.size(); i++)
+      pDemo->sats[i].rotate();
    
    // phase up the stars
    for (int i = 0; i < 200; i++)
@@ -113,7 +134,8 @@ void callBack(const Interface* pUI, void* p)
    }
    
    // do physics stuff
-   pDemo->gps.move(48);
+   for (int i = 0; i < pDemo->sats.size(); i++)
+      pDemo->sats[i].move(48); // t = 48s
    
 
    //
@@ -124,7 +146,9 @@ void callBack(const Interface* pUI, void* p)
    ogstream gout(pt);
 
    // draw satellites
-   pDemo->gps.draw(gout);
+   for (int i = 0; i < pDemo->sats.size(); i++)
+      pDemo->sats[i].draw(gout);
+
 
    // draw stars
    for (int i = 0; i < 200; i++)

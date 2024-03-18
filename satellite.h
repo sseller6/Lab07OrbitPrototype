@@ -42,13 +42,16 @@ public:
 
    // virtuals
    virtual void rotate(bool clockwise = true) { }
-   virtual void draw(ogstream &gout)          { }
+   virtual void draw(ogstream &gout)          { std::cout << "INCORRECT" << std::endl; }
    //virtual void breakApart()                  { }
    //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }
 
    // operators
    void operator= (Satellite& rhs);
+
+   // temp
+   string getString() { return "Hi"; }
 
 protected:
    Position pos;
