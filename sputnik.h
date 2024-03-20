@@ -24,7 +24,7 @@ public:
 
    // attributes
    void rotate(bool clockwise = true);
-   void draw(ogstream& gout) const;
+   void draw(ogstream& gout) const override;
 
    // operators
    Sputnik& operator= (Sputnik& rhs);

@@ -19,6 +19,9 @@ public:
    Whole() : Satellite() { }
    Whole(Position &pos, Velocity &vel, Direction &dir) : Satellite(pos, vel, dir) { }
 
+   // virtuals
+   virtual void draw(ogstream &gout) const override { }
+
    // operators
    void operator= (Whole& rhs);
 };

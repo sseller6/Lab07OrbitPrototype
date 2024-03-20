@@ -42,8 +42,9 @@ public:
 
    // virtuals
    virtual void rotate(bool clockwise = true) { }
-   virtual void draw(ogstream &gout)          { std::cout << "INCORRECT" << std::endl; }
-   //virtual void breakApart()                  { }
+   virtual void draw(ogstream &gout) const    { }
+   //virtual void breakApart()           
+//        { }
    //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }
 
