@@ -24,6 +24,10 @@
 #include "earth.h"      // for EARTH
 #include "GPS.h"        // for GPS
 #include "sputnik.h"    // for Sputnik
+#include "hubble.h"     // for Hubble
+#include "dragon.h"     // for Dragon
+#include "starlink.h"   // for Starlink
+#include "dreamChaser.h"// for DreamChaser
 #include "star.h"       // for STAR
 
 using namespace std;
@@ -53,7 +57,7 @@ public:
          Position posGPS(GPSValues[i][0], GPSValues[i][1]);
          Velocity velGPS(GPSValues[i][2], GPSValues[i][3]);
          Direction dirGPS(random(0.0, 2 * M_PI));
-         GPS g(posGPS, velGPS, dirGPS);
+         GPS * g = new GPS(posGPS, velGPS, dirGPS);
          sats.push_back(g);
       }
       
@@ -61,9 +65,36 @@ public:
       Position posSputnik(-36515095.13, 21082000);
       Velocity velSputnik(2050, 2684.68);
       Direction dirSputnik(random(0.0, 2 * M_PI));
-      Sputnik s(posSputnik, velSputnik, dirSputnik);
+      Sputnik * s = new Sputnik(posSputnik, velSputnik, dirSputnik);
       sats.push_back(s);
+
+      // Hubble
+      Position posHubble(0, -42164000);
+      Velocity velHubble(3100, 0);
+      Direction dirHubble(random(0.0, 2 * M_PI));
+      Hubble* h = new Hubble(posHubble, velHubble, dirHubble);
+      sats.push_back(h);
+
+      // Dragon   // FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIX
+      Position posDragon(0, 8000000);
+      Velocity velDragon(-7900, 0);
+      Direction dirDragon(random(0.0, 2 * M_PI));
+      Dragon* d = new Dragon(posDragon, velDragon, dirDragon);
+      sats.push_back(d);
       
+      // Starlink  // FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIX
+      Position posStarlink(0, -13020000);
+      Velocity velStarlink(5800, 0);
+      Direction dirStarlink(random(0.0, 2 * M_PI));
+      Starlink* sl = new Starlink(posStarlink, velStarlink, dirStarlink);
+      sats.push_back(sl);
+
+      // DreamChaser
+      Position posDreamChaser(0, -13020000);
+      Velocity velDreamChaser(5800, 0);
+      Direction dirDreamChaser(random(0.0, 2 * M_PI));
+      ship = new DreamChaser(posDreamChaser, velDreamChaser, dirDreamChaser);
+
       // 200 stars
       double halfWidth =  ptUpperRight.getMetersX() / 2;
       double halfHeight = ptUpperRight.getMetersY() / 2;
@@ -76,13 +107,13 @@ public:
          stars[i] = newStar;
       }
 
-      for (Satellite sat : sats)
-      {
-         cout << sat.getString() << endl;
-      }
+      // Verify override
+      for (int i = 0; i < sats.size(); i++)
+         std::cout << sats[i]->getString() << std::endl;
    }
    
-   vector<Satellite> sats;
+   vector<Satellite*> sats;
+   DreamChaser * ship;
    Star stars[200];
    Earth earth;
    Position ptUpperRight;
@@ -106,14 +137,12 @@ void callBack(const Interface* pUI, void* p)
    //
 
    // move by a little
-//   if (pUI->isUp())
-//      pDemo->ptShip.addPixelsY(1.0);
-//   if (pUI->isDown())
-//      pDemo->ptShip.addPixelsY(-1.0);
-//   if (pUI->isLeft())
-//      pDemo->ptShip.addPixelsX(-1.0);
-//   if (pUI->isRight())
-//      pDemo->ptShip.addPixelsX(1.0);
+   if (pUI->isDown())
+      pDemo->ship->thrust();
+   if (pUI->isLeft())
+      pDemo->ship->rotate(false);
+   if (pUI->isRight())
+      pDemo->ship->rotate();
 
 
    //
@@ -125,7 +154,7 @@ void callBack(const Interface* pUI, void* p)
    
    // rotate the satellites
    for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i].rotate();
+      pDemo->sats[i]->rotate();
    
    // phase up the stars
    for (int i = 0; i < 200; i++)
@@ -135,7 +164,9 @@ void callBack(const Interface* pUI, void* p)
    
    // do physics stuff
    for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i].move(48); // t = 48s
+      pDemo->sats[i]->move(48); // t = 48s
+
+   pDemo->ship->move(48);
    
 
    //
@@ -147,8 +178,10 @@ void callBack(const Interface* pUI, void* p)
 
    // draw satellites
    for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i].draw(gout);
-
+      pDemo->sats[i]->draw(gout);
+   
+   pDemo->ship->draw(gout);
+   pDemo->ship->thrust(false);
 
    // draw stars
    for (int i = 0; i < 200; i++)

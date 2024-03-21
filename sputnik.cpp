@@ -7,7 +7,7 @@
  *    The Sputnik inherits from the Whole class.
  ************************************************************************/
 
-#include "Sputnik.h"
+#include "sputnik.h"
 
 Sputnik& Sputnik::operator= (Sputnik& rhs)
 {
@@ -32,5 +32,5 @@ void Sputnik::rotate(bool clockwise)
 
 void Sputnik::draw(ogstream& gout) const
 {
-   gout.drawGPS(pos, dir.getAngle());
+   gout.drawSputnik(pos, dir.getAngle());
 }

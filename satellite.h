@@ -37,22 +37,21 @@ public:
    //void kill()   { dead = true; }
 
    // misc   
-   void move(float time);
+   virtual void move(float time);
    void setRotation(Direction rotation) { dir = rotation; }
 
    // virtuals
    virtual void rotate(bool clockwise = true) { }
-   virtual void draw(ogstream &gout) const    { }
-   //virtual void breakApart()           
-//        { }
+   virtual void draw(ogstream &gout) const    =0;
+   //virtual void breakApart()                  { }
    //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }
 
    // operators
    void operator= (Satellite& rhs);
 
-   // temp
-   string getString() { return "Hi"; }
+   // tempORARY
+   virtual string getString() { return "Satellite"; }
 
 protected:
    Position pos;

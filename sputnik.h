@@ -28,4 +28,7 @@ public:
 
    // operators
    Sputnik& operator= (Sputnik& rhs);
+
+   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+   string getString() { return "Successfully Displayed Sputnik"; }
 };

@@ -24,4 +24,7 @@ public:
 
    // operators
    void operator= (Whole& rhs);
+
+   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+   virtual string getString() { return "Whole"; }
 };

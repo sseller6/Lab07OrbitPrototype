@@ -28,4 +28,7 @@ public:
 
    // operators
    GPS& operator= (GPS& rhs);
+
+   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+   string getString() { return "Successfully Displayed GPS"; }
 };
