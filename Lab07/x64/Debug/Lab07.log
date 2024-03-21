@@ -1,14 +1,2 @@
-﻿  GPS.cpp
-  Lab07.cpp
-  acceleration.cpp
-  dragon.cpp
-  dreamChaser.cpp
-  hubble.cpp
-  satellite.cpp
-  sputnik.cpp
-  starlink.cpp
-  test.cpp
-  testSatellite.cpp
-  whole.cpp
-  Generating Code...
+﻿  testSatellite.cpp
   Lab07.vcxproj -> C:\programmingProjects\PublicRepos\Lab07OrbitPrototype\x64\Debug\Lab07.exe

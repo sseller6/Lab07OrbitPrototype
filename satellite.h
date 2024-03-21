@@ -42,7 +42,7 @@ public:
 
    // virtuals
    virtual void rotate(bool clockwise = true) { }
-   virtual void draw(ogstream &gout) const    =0;
+   virtual void draw(ogstream &gout) const    { }
    //virtual void breakApart()                  { }
    //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }

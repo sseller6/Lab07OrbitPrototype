@@ -23,32 +23,23 @@ class TestSatellite : public UnitTest
 public:
    void run()
    {
-      // Testing a moving Satellite
-      orbitCalc_topRight();
-      //orbitCalc_topLeft();
-      //orbitCalc_bottomRight();
-      //orbitCalc_bottomLeft();
-      //gravityDirection_moving();
-
-      // Testing a Stationary Satellite
-      //gravityDirection_stationary();
+      move_ZeroSeconds();
+      move_OneSecond();
+      //move_FortyEightSeconds();
 
       report("Satellite");
    }
 
 
 private:
-   // utility funciton because floating point numbers are approximations
-   bool closeEnough(double value, double test, double tolerence) const
+   // utility function because floating point numbers are approximations
+   bool closeEnough(double value, double test, double tolerance) const
    {
       double difference = value - test;
-      return (difference >= -tolerence) && (difference <= tolerence);
+      return (difference >= -tolerance) && (difference <= tolerance);
    }
 
-   void orbitCalc_topRight();
-   void orbitCalc_topLeft();
-   void orbitCalc_bottomRight();
-   void orbitCalc_bottomLeft();
-   void gravityDirection_moving();
-   void gravityDirection_stationary();
+   void move_ZeroSeconds();
+   void move_OneSecond();
+   //void move_FortyEightSeconds();
 };

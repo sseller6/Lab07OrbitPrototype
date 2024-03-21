@@ -32,3 +32,13 @@ private:
    static double radius;
    static double gravity;
 };
+
+
+// Always returns simple, pre-specified values.
+class StubEarth : public Earth
+{
+public:
+   static double getRadius()  { return 6371000.0;  }
+   static double getGravity() { return 9.81;       }
+   static Position getPos()   { return Position(); }
+};
