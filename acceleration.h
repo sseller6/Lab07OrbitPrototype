@@ -24,6 +24,10 @@ public:
    void setAngleMag(double angle, double mag);
    
    void reverse();
+
+   // Operators
+   Acceleration operator+ (const Acceleration& rhs) const;
+   Acceleration& operator+= (const Acceleration& rhs);
    
 private:
    double ddx;

@@ -18,3 +18,15 @@ void Acceleration::reverse()
    ddx *= -1;
    ddy *= -1;
 }
+
+Acceleration Acceleration::operator+ (const Acceleration & rhs) const
+{
+   return Acceleration(rhs.ddx + ddx, rhs.ddy + ddy);
+}
+
+Acceleration& Acceleration::operator+= (const Acceleration& rhs)
+{
+   ddx += rhs.ddx;
+   ddy += rhs.ddy;
+   return *this;
+}

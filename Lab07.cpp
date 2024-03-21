@@ -90,9 +90,11 @@ public:
       sats.push_back(sl);
 
       // DreamChaser
-      Position posDreamChaser(0, -13020000);
-      Velocity velDreamChaser(5800, 0);
-      Direction dirDreamChaser(random(0.0, 2 * M_PI));
+      Position posDreamChaser;
+      posDreamChaser.setPixelsX(-450);
+      posDreamChaser.setPixelsY(450);
+      Velocity velDreamChaser(0, -2000);
+      Direction dirDreamChaser(-M_PI);
       ship = new DreamChaser(posDreamChaser, velDreamChaser, dirDreamChaser);
 
       // 200 stars

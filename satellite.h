@@ -72,12 +72,3 @@ protected:
       double computeNewY(Position& pos, Velocity& vel, Acceleration& acc, double time);
    };
 };
-
-class SatelliteFake : Satellite
-{
-public:
-
-
-private:
-
-};

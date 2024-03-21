@@ -21,29 +21,38 @@ DreamChaser& DreamChaser::operator= (DreamChaser& rhs)
 void DreamChaser::move(float time)
 {
    Physics p;
-
-   // Every calculation is affected by gravity.
-
-   // FIGURE OUT THRUSTING
+   
+   // Calculate acceleration due to gravity.
    double height = p.heightFromPosition(pos);
    double grav = p.gravityFromHeight(height);
    double dirGrav = p.directionOfGravity(pos);
-
+   
    Acceleration acc = Acceleration();
    acc.setAngleMag(dirGrav, grav);
    acc.reverse();
-
+   
+   // Calculate acceleration due to thrust.
+   if (thrusting)
+   {
+      Acceleration thrust = Acceleration();
+      thrust.setAngleMag(dir.getAngle(), 2.0);
+      acc += thrust;
+   }
+   
+   // Calculate new velocity based on acceleration.
    double newDx = p.computeNewDx(vel, acc, time);
    double newDy = p.computeNewDy(vel, acc, time);
    vel.setDx(newDx);
    vel.setDy(newDy);
-
+   
+   // Calculate new position based on velocity and acceleration.
    double newX = p.computeNewX(pos, vel, acc, time);
    double newY = p.computeNewY(pos, vel, acc, time);
-
+   
    pos.setMeters(newX, newY);
 }
 
+// Rotate the DreamChaser.
 void DreamChaser::rotate(bool clockwise)
 {
    if (clockwise)
