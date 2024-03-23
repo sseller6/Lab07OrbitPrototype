@@ -8,7 +8,6 @@
  ************************************************************************/
 
 #include "satellite.h"
-#include "earth.h"
 
 void Satellite::operator= (Satellite& rhs) 
 {
@@ -18,14 +17,14 @@ void Satellite::operator= (Satellite& rhs)
 }
 
 
-void Satellite::move(float time)
+void Satellite::move(float time, Earth& earth)
 {
    Physics p;
 
    // Every calculation is affected by gravity.
-   double height = p.heightFromPosition(pos);
-   double grav = p.gravityFromHeight(height);
-   double dirGrav = p.directionOfGravity(pos);
+   double height = p.heightFromPosition(pos, earth);
+   double grav = p.gravityFromHeight(height, earth);
+   double dirGrav = p.directionOfGravity(pos, earth);
 
    Acceleration acc = Acceleration();
    acc.setAngleMag(dirGrav, grav);
@@ -44,25 +43,25 @@ void Satellite::move(float time)
 
 
 // Physics methods
-double Satellite::Physics::heightFromPosition(Position& pos)
+double Satellite::Physics::heightFromPosition(Position& pos, Earth& e)
 {
-   double r = Earth::getRadius();
+   double r = e.getRadius();
    double posX = pos.getMetersX();
    double posY = pos.getMetersY();
    return sqrt(pow(posX, 2) + pow(posY, 2)) - r;
 }
 
-double Satellite::Physics::gravityFromHeight(double height)
+double Satellite::Physics::gravityFromHeight(double height, Earth& e)
 {
-   double r = Earth::getRadius();
-   double g = Earth::getGravity();
+   double r = e.getRadius();
+   double g = e.getGravity();
    return g * pow(r / (r + height), 2);
 }
 
-double Satellite::Physics::directionOfGravity(Position& pos)
+double Satellite::Physics::directionOfGravity(Position& pos, Earth& e)
 {
-   double earthX = Earth::getPos().getMetersX();
-   double earthY = Earth::getPos().getMetersY();
+   double earthX = e.getPos().getMetersX();
+   double earthY = e.getPos().getMetersY();
    return atan2(earthX - pos.getMetersX(), earthY - pos.getMetersY());
 }
 

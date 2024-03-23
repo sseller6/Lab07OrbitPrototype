@@ -25,7 +25,7 @@ public:
    {
       move_ZeroSeconds();
       move_OneSecond();
-      //move_FortyEightSeconds();
+      move_FortyEightSeconds();
 
       report("Satellite");
    }
@@ -41,5 +41,5 @@ private:
 
    void move_ZeroSeconds();
    void move_OneSecond();
-   //void move_FortyEightSeconds();
+   void move_FortyEightSeconds();
 };

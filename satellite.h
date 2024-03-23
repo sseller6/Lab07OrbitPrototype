@@ -16,6 +16,7 @@
 #include "velocity.h"
 #include "acceleration.h"
 #include "direction.h"
+#include "earth.h"
 
 class TestSatellite;
 
@@ -37,7 +38,7 @@ public:
    //void kill()   { dead = true; }
 
    // misc   
-   virtual void move(float time);
+   virtual void move(float time, Earth& earth);
    void setRotation(Direction rotation) { dir = rotation; }
 
    // virtuals
@@ -63,9 +64,9 @@ protected:
    class Physics
    {
    public:
-      double heightFromPosition(Position& pos);
-      double gravityFromHeight(double height);
-      double directionOfGravity(Position& pos);
+      double heightFromPosition(Position& pos, Earth& e);
+      double gravityFromHeight(double height, Earth& e);
+      double directionOfGravity(Position& pos, Earth& e);
       double computeNewDx(Velocity& vel, Acceleration& acc, double time);
       double computeNewDy(Velocity& vel, Acceleration& acc, double time);
       double computeNewX(Position& pos, Velocity& vel, Acceleration& acc, double time);

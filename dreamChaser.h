@@ -12,6 +12,7 @@
 #include "position.h"
 #include "velocity.h"
 #include "acceleration.h"
+#include "earth.h"
 
 #include "whole.h"
 
@@ -25,7 +26,7 @@ public:
    // methods
    void rotate(bool clockwise = true);
    void thrust(bool thrusting = true ) { this->thrusting = thrusting; }
-   void move(float time) override;
+   void move(float time, Earth& earth) override;
    void draw(ogstream& gout) const override;
 
    // operators

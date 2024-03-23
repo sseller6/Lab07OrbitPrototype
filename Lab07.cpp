@@ -108,10 +108,6 @@ public:
          newStar.setPhase(random(0, 255));
          stars[i] = newStar;
       }
-
-      // Verify override
-      for (int i = 0; i < sats.size(); i++)
-         std::cout << sats[i]->getString() << std::endl;
    }
    
    vector<Satellite*> sats;
@@ -166,9 +162,9 @@ void callBack(const Interface* pUI, void* p)
    
    // do physics stuff
    for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i]->move(48); // t = 48s
+      pDemo->sats[i]->move(48, pDemo->earth); // t = 48s
 
-   pDemo->ship->move(48);
+   pDemo->ship->move(48, pDemo->earth);
    
 
    //
@@ -197,10 +193,6 @@ void callBack(const Interface* pUI, void* p)
 
 // Good spot to set our static variables.
 double Position::metersFromPixels = 40.0;
-
-double Earth::gravity = -9.80665;
-double Earth::radius = 6378000;
-Position Earth::pos = Position(0.0, 0.0);
 
 /*********************************
  * Initialize the simulation and set it in motion

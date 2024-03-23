@@ -15,22 +15,22 @@
 class Earth
 {
 public:
-   Earth() : rotation(Direction(0.0)) { }
+   Earth() : pos(Position(0.0, 0.0)), rotation(Direction(0.0)), radius(6378000), gravity(-9.80665) { }
 
    // getters
-   static double getRadius()  { return radius;  }
-   static double getGravity() { return gravity; }
-   static Position getPos()   { return pos;     }
+   virtual double getRadius()  const { return radius;  }
+   virtual double getGravity() const { return gravity; }
+   virtual Position getPos()   const { return pos;     }
 
    // Misc
    void rotate(double amount) { rotation += amount; }
    void draw(ogstream &gout) const { gout.drawEarth(pos, rotation.getAngle()); }
 
 private:
-   static Position pos;
+   Position pos;
    Direction rotation;
-   static double radius;
-   static double gravity;
+   double radius;
+   double gravity;
 };
 
 
@@ -38,7 +38,7 @@ private:
 class StubEarth : public Earth
 {
 public:
-   static double getRadius()  { return 6371000.0;  }
-   static double getGravity() { return 9.81;       }
-   static Position getPos()   { return Position(); }
+   double getRadius()  const override { return 6371000.0;  }
+   double getGravity() const override { return 0.0;       }
+   Position getPos()   const override { return Position(); }
 };

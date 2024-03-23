@@ -18,14 +18,14 @@ DreamChaser& DreamChaser::operator= (DreamChaser& rhs)
    return *this;
 }
 
-void DreamChaser::move(float time)
+void DreamChaser::move(float time, Earth& earth)
 {
    Physics p;
    
    // Calculate acceleration due to gravity.
-   double height = p.heightFromPosition(pos);
-   double grav = p.gravityFromHeight(height);
-   double dirGrav = p.directionOfGravity(pos);
+   double height = p.heightFromPosition(pos, earth);
+   double grav = p.gravityFromHeight(height, earth);
+   double dirGrav = p.directionOfGravity(pos, earth);
    
    Acceleration acc = Acceleration();
    acc.setAngleMag(dirGrav, grav);
