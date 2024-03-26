@@ -12,3 +12,9 @@ void Velocity::setAngleMag(double angle, double mag)
    dx = mag * sin(angle);
    dy = mag * cos(angle);
 }
+
+void Velocity::computeNewVel(Acceleration& acc, double time)
+{
+   dx += acc.getDdx() * time;
+   dy += acc.getDdy() * time;
+}

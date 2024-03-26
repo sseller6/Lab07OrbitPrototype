@@ -18,6 +18,16 @@ Position::Position(double x, double y) : x(0.0), y(0.0)
 }
 
 /******************************************
+ * POINT : PHYSICS
+ * Compute the new position given vel, acc, and t
+ *****************************************/
+void Position::computeNewPos(Velocity& vel, Acceleration& acc, double time)
+{
+   x += (vel.getDx() * time) + (0.5 * acc.getDdx() * time * time);
+   y += (vel.getDy() * time) + (0.5 * acc.getDdy() * time * time);
+}
+
+/******************************************
  * POINT : ASSIGNMENT
  * Assign a point
  *****************************************/

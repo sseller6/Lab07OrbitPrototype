@@ -40,16 +40,10 @@ void DreamChaser::move(float time, Earth& earth)
    }
    
    // Calculate new velocity based on acceleration.
-   double newDx = p.computeNewDx(vel, acc, time);
-   double newDy = p.computeNewDy(vel, acc, time);
-   vel.setDx(newDx);
-   vel.setDy(newDy);
+   vel.computeNewVel(acc, time);
    
    // Calculate new position based on velocity and acceleration.
-   double newX = p.computeNewX(pos, vel, acc, time);
-   double newY = p.computeNewY(pos, vel, acc, time);
-   
-   pos.setMeters(newX, newY);
+   pos.computeNewPos(vel, acc, time);
 }
 
 // Rotate the DreamChaser.

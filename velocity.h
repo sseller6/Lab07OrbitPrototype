@@ -7,6 +7,7 @@
 
 #pragma once
 #include <cmath>
+#include "acceleration.h"
 
 class Velocity
 {
@@ -23,6 +24,8 @@ public:
    void setDx(double dx) { this->dx = dx; }
    void setDy(double dy) { this->dy = dy; }
    void setAngleMag(double angle, double mag);
+   
+   void computeNewVel(Acceleration& acc, double time);
    
 private:
    double dx;

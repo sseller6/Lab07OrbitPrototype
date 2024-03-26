@@ -67,9 +67,5 @@ protected:
       double heightFromPosition(Position& pos, Earth& e);
       double gravityFromHeight(double height, Earth& e);
       double directionOfGravity(Position& pos, Earth& e);
-      double computeNewDx(Velocity& vel, Acceleration& acc, double time);
-      double computeNewDy(Velocity& vel, Acceleration& acc, double time);
-      double computeNewX(Position& pos, Velocity& vel, Acceleration& acc, double time);
-      double computeNewY(Position& pos, Velocity& vel, Acceleration& acc, double time);
    };
 };

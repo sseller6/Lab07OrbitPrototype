@@ -16,7 +16,6 @@ void Satellite::operator= (Satellite& rhs)
    dir = rhs.dir; 
 }
 
-
 void Satellite::move(float time, Earth& earth)
 {
    Physics p;
@@ -30,17 +29,10 @@ void Satellite::move(float time, Earth& earth)
    acc.setAngleMag(dirGrav, grav);
    acc.reverse();
 
-   double newDx = p.computeNewDx(vel, acc, time);
-   double newDy = p.computeNewDy(vel, acc, time);
-   vel.setDx(newDx);
-   vel.setDy(newDy);
+   vel.computeNewVel(acc, time);
 
-   double newX = p.computeNewX(pos, vel, acc, time);
-   double newY = p.computeNewY(pos, vel, acc, time);
-
-   pos.setMeters(newX, newY);
+   pos.computeNewPos(vel, acc, time);
 }
-
 
 // Physics methods
 double Satellite::Physics::heightFromPosition(Position& pos, Earth& e)
@@ -48,14 +40,14 @@ double Satellite::Physics::heightFromPosition(Position& pos, Earth& e)
    double r = e.getRadius();
    double posX = pos.getMetersX();
    double posY = pos.getMetersY();
-   return sqrt(pow(posX, 2) + pow(posY, 2)) - r;
+   return sqrt(posX * posX + posY * posY) - r;
 }
 
 double Satellite::Physics::gravityFromHeight(double height, Earth& e)
 {
    double r = e.getRadius();
    double g = e.getGravity();
-   return g * pow(r / (r + height), 2);
+   return g * (r / (r + height)) * (r / (r + height));
 }
 
 double Satellite::Physics::directionOfGravity(Position& pos, Earth& e)
@@ -63,24 +55,4 @@ double Satellite::Physics::directionOfGravity(Position& pos, Earth& e)
    double earthX = e.getPos().getMetersX();
    double earthY = e.getPos().getMetersY();
    return atan2(earthX - pos.getMetersX(), earthY - pos.getMetersY());
-}
-
-double Satellite::Physics::computeNewDx(Velocity& vel, Acceleration& acc, double time)
-{
-   return vel.getDx() + acc.getDdx() * time;
-}
-
-double Satellite::Physics::computeNewDy(Velocity& vel, Acceleration& acc, double time)
-{
-   return vel.getDy() + acc.getDdy() * time;
-}
-
-double Satellite::Physics::computeNewX(Position& pos, Velocity& vel, Acceleration& acc, double time)
-{
-   return pos.getMetersX() + vel.getDx() * time + 0.5 * acc.getDdx() * pow(time, 2);
-}
-
-double Satellite::Physics::computeNewY(Position& pos, Velocity& vel, Acceleration& acc, double time)
-{
-   return pos.getMetersY() + vel.getDy() * time + 0.5 * acc.getDdy() * pow(time, 2);
 }

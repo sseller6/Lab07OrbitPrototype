@@ -14,10 +14,18 @@
 		C11C7EB325780B6500EA4B2E /* uiInteract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C7EA925780B5E00EA4B2E /* uiInteract.cpp */; };
 		C11C7EB525780B6500EA4B2E /* uiDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C7EAD25780B6000EA4B2E /* uiDraw.cpp */; };
 		C179C6C127E375AF00E3E514 /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C179C6C027E375AF00E3E514 /* position.cpp */; };
-		E75AF3082B87D4E000C37067 /* physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF3062B87D45300C37067 /* physics.cpp */; };
 		E75AF30D2B894E8E00C37067 /* acceleration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF30A2B894E0C00C37067 /* acceleration.cpp */; };
 		E75AF3112B89560C00C37067 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF30E2B89537A00C37067 /* velocity.cpp */; };
-		E75AF3152B8956C100C37067 /* shipGPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF3122B89566700C37067 /* shipGPS.cpp */; };
+		E79080522BB34F75004BCFD9 /* direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080502BB34F60004BCFD9 /* direction.cpp */; };
+		E79080532BB34F75004BCFD9 /* dragon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080452BB34F5F004BCFD9 /* dragon.cpp */; };
+		E79080542BB34F75004BCFD9 /* dreamChaser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080412BB34F5F004BCFD9 /* dreamChaser.cpp */; };
+		E79080552BB34F75004BCFD9 /* GPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080462BB34F5F004BCFD9 /* GPS.cpp */; };
+		E79080562BB34F75004BCFD9 /* hubble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E790803E2BB34F5F004BCFD9 /* hubble.cpp */; };
+		E79080572BB34F75004BCFD9 /* satellite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E790803C2BB34F5F004BCFD9 /* satellite.cpp */; };
+		E79080582BB34F75004BCFD9 /* sputnik.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E790804C2BB34F60004BCFD9 /* sputnik.cpp */; };
+		E79080592BB34F75004BCFD9 /* starlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080472BB34F5F004BCFD9 /* starlink.cpp */; };
+		E790805A2BB34F75004BCFD9 /* testSatellite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E790804A2BB34F60004BCFD9 /* testSatellite.cpp */; };
+		E790805B2BB34F75004BCFD9 /* whole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E790804B2BB34F60004BCFD9 /* whole.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,14 +54,33 @@
 		C11C7EB025780B6500EA4B2E /* uiDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiDraw.h; sourceTree = "<group>"; };
 		C179C6C027E375AF00E3E514 /* position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = position.cpp; sourceTree = "<group>"; };
 		C179C6C227E375D600E3E514 /* position.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = position.h; sourceTree = "<group>"; };
-		E75AF3062B87D45300C37067 /* physics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = physics.cpp; sourceTree = "<group>"; };
-		E75AF3092B87D4FB00C37067 /* physics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = physics.h; sourceTree = "<group>"; };
 		E75AF30A2B894E0C00C37067 /* acceleration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acceleration.cpp; sourceTree = "<group>"; };
 		E75AF30C2B894E6E00C37067 /* acceleration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceleration.h; sourceTree = "<group>"; };
 		E75AF30E2B89537A00C37067 /* velocity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
 		E75AF3102B89539800C37067 /* velocity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = velocity.h; sourceTree = "<group>"; };
-		E75AF3122B89566700C37067 /* shipGPS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shipGPS.cpp; sourceTree = "<group>"; };
-		E75AF3142B89569300C37067 /* shipGPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shipGPS.h; sourceTree = "<group>"; };
+		E790803B2BB34F5F004BCFD9 /* hubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hubble.h; sourceTree = "<group>"; };
+		E790803C2BB34F5F004BCFD9 /* satellite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = satellite.cpp; sourceTree = "<group>"; };
+		E790803D2BB34F5F004BCFD9 /* earth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = earth.h; sourceTree = "<group>"; };
+		E790803E2BB34F5F004BCFD9 /* hubble.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hubble.cpp; sourceTree = "<group>"; };
+		E790803F2BB34F5F004BCFD9 /* satellite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = satellite.h; sourceTree = "<group>"; };
+		E79080402BB34F5F004BCFD9 /* sputnik.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sputnik.h; sourceTree = "<group>"; };
+		E79080412BB34F5F004BCFD9 /* dreamChaser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dreamChaser.cpp; sourceTree = "<group>"; };
+		E79080422BB34F5F004BCFD9 /* testSatellite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testSatellite.h; sourceTree = "<group>"; };
+		E79080432BB34F5F004BCFD9 /* dragon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dragon.h; sourceTree = "<group>"; };
+		E79080442BB34F5F004BCFD9 /* GPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPS.h; sourceTree = "<group>"; };
+		E79080452BB34F5F004BCFD9 /* dragon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dragon.cpp; sourceTree = "<group>"; };
+		E79080462BB34F5F004BCFD9 /* GPS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GPS.cpp; sourceTree = "<group>"; };
+		E79080472BB34F5F004BCFD9 /* starlink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = starlink.cpp; sourceTree = "<group>"; };
+		E79080482BB34F5F004BCFD9 /* unitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unitTest.h; sourceTree = "<group>"; };
+		E79080492BB34F5F004BCFD9 /* star.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = star.h; sourceTree = "<group>"; };
+		E790804A2BB34F60004BCFD9 /* testSatellite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testSatellite.cpp; sourceTree = "<group>"; };
+		E790804B2BB34F60004BCFD9 /* whole.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = whole.cpp; sourceTree = "<group>"; };
+		E790804C2BB34F60004BCFD9 /* sputnik.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sputnik.cpp; sourceTree = "<group>"; };
+		E790804D2BB34F60004BCFD9 /* direction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = direction.h; sourceTree = "<group>"; };
+		E790804E2BB34F60004BCFD9 /* dreamChaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dreamChaser.h; sourceTree = "<group>"; };
+		E790804F2BB34F60004BCFD9 /* starlink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = starlink.h; sourceTree = "<group>"; };
+		E79080502BB34F60004BCFD9 /* direction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = direction.cpp; sourceTree = "<group>"; };
+		E79080512BB34F60004BCFD9 /* whole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = whole.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +99,33 @@
 		C11C7E8D2578098A00EA4B2E = {
 			isa = PBXGroup;
 			children = (
-				E75AF3142B89569300C37067 /* shipGPS.h */,
-				E75AF3122B89566700C37067 /* shipGPS.cpp */,
+				E79080502BB34F60004BCFD9 /* direction.cpp */,
+				E790804D2BB34F60004BCFD9 /* direction.h */,
+				E79080452BB34F5F004BCFD9 /* dragon.cpp */,
+				E79080432BB34F5F004BCFD9 /* dragon.h */,
+				E79080412BB34F5F004BCFD9 /* dreamChaser.cpp */,
+				E790804E2BB34F60004BCFD9 /* dreamChaser.h */,
+				E790803D2BB34F5F004BCFD9 /* earth.h */,
+				E79080462BB34F5F004BCFD9 /* GPS.cpp */,
+				E79080442BB34F5F004BCFD9 /* GPS.h */,
+				E790803E2BB34F5F004BCFD9 /* hubble.cpp */,
+				E790803B2BB34F5F004BCFD9 /* hubble.h */,
+				E790803C2BB34F5F004BCFD9 /* satellite.cpp */,
+				E790803F2BB34F5F004BCFD9 /* satellite.h */,
+				E790804C2BB34F60004BCFD9 /* sputnik.cpp */,
+				E79080402BB34F5F004BCFD9 /* sputnik.h */,
+				E79080492BB34F5F004BCFD9 /* star.h */,
+				E79080472BB34F5F004BCFD9 /* starlink.cpp */,
+				E790804F2BB34F60004BCFD9 /* starlink.h */,
+				E790804A2BB34F60004BCFD9 /* testSatellite.cpp */,
+				E79080422BB34F5F004BCFD9 /* testSatellite.h */,
+				E79080482BB34F5F004BCFD9 /* unitTest.h */,
+				E790804B2BB34F60004BCFD9 /* whole.cpp */,
+				E79080512BB34F60004BCFD9 /* whole.h */,
 				E75AF3102B89539800C37067 /* velocity.h */,
 				E75AF30E2B89537A00C37067 /* velocity.cpp */,
 				E75AF30C2B894E6E00C37067 /* acceleration.h */,
 				E75AF30A2B894E0C00C37067 /* acceleration.cpp */,
-				E75AF3092B87D4FB00C37067 /* physics.h */,
-				E75AF3062B87D45300C37067 /* physics.cpp */,
 				C179C6C227E375D600E3E514 /* position.h */,
 				C179C6C027E375AF00E3E514 /* position.cpp */,
 				C11C7EA625780B5C00EA4B2E /* Lab07.cpp */,
@@ -169,10 +215,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75AF3152B8956C100C37067 /* shipGPS.cpp in Sources */,
+				E79080522BB34F75004BCFD9 /* direction.cpp in Sources */,
+				E79080532BB34F75004BCFD9 /* dragon.cpp in Sources */,
+				E79080542BB34F75004BCFD9 /* dreamChaser.cpp in Sources */,
+				E79080552BB34F75004BCFD9 /* GPS.cpp in Sources */,
+				E79080562BB34F75004BCFD9 /* hubble.cpp in Sources */,
+				E79080572BB34F75004BCFD9 /* satellite.cpp in Sources */,
+				E79080582BB34F75004BCFD9 /* sputnik.cpp in Sources */,
+				E79080592BB34F75004BCFD9 /* starlink.cpp in Sources */,
+				E790805A2BB34F75004BCFD9 /* testSatellite.cpp in Sources */,
+				E790805B2BB34F75004BCFD9 /* whole.cpp in Sources */,
 				E75AF3112B89560C00C37067 /* velocity.cpp in Sources */,
 				E75AF30D2B894E8E00C37067 /* acceleration.cpp in Sources */,
-				E75AF3082B87D4E000C37067 /* physics.cpp in Sources */,
 				C11C7EB525780B6500EA4B2E /* uiDraw.cpp in Sources */,
 				C11C7EB125780B6500EA4B2E /* Lab07.cpp in Sources */,
 				C11C7EB225780B6500EA4B2E /* test.cpp in Sources */,
