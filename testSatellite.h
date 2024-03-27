@@ -18,6 +18,10 @@
 #include "satellite.h"
 #include "unitTest.h"
 
+/***************************************************
+ * TEST SATELLITE
+ * The tests for testing satellite.
+ ***************************************************/
 class TestSatellite : public UnitTest
 {
 public:
@@ -29,7 +33,6 @@ public:
 
       report("Satellite");
    }
-
 
 private:
    // utility function because floating point numbers are approximations

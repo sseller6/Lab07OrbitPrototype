@@ -12,6 +12,11 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+/***************************************************
+ * DIRECTION
+ * All the code needed for direction 
+ * in the simulation.
+ ***************************************************/
 class Direction
 {
 public:

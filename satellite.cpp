@@ -9,6 +9,9 @@
 
 #include "satellite.h"
 
+/***************************************************
+ * SATELLITE : OPERATOR = OVERLOAD
+ ***************************************************/
 void Satellite::operator= (Satellite& rhs) 
 {
    pos = rhs.pos;
@@ -16,6 +19,9 @@ void Satellite::operator= (Satellite& rhs)
    dir = rhs.dir; 
 }
 
+/***************************************************
+ * SATELLITE : MOVE
+ ***************************************************/
 void Satellite::move(float time, Earth& earth)
 {
    Physics p;
@@ -34,7 +40,9 @@ void Satellite::move(float time, Earth& earth)
    pos.computeNewPos(vel, acc, time);
 }
 
-// Physics methods
+/***************************************************
+ * SATELLITE : PHYSICS : HEIGHT FROM POSITION
+ ***************************************************/
 double Satellite::Physics::heightFromPosition(Position& pos, Earth& e)
 {
    double r = e.getRadius();
@@ -43,6 +51,9 @@ double Satellite::Physics::heightFromPosition(Position& pos, Earth& e)
    return sqrt(posX * posX + posY * posY) - r;
 }
 
+/***************************************************
+ * SATELLITE : PHYSICS : GRAVITY FROM HEIGHT
+ ***************************************************/
 double Satellite::Physics::gravityFromHeight(double height, Earth& e)
 {
    double r = e.getRadius();
@@ -50,6 +61,9 @@ double Satellite::Physics::gravityFromHeight(double height, Earth& e)
    return g * (r / (r + height)) * (r / (r + height));
 }
 
+/***************************************************
+ * SATELLITE : PHYSICS : DIRECTION OF GRAVITY
+ ***************************************************/ 
 double Satellite::Physics::directionOfGravity(Position& pos, Earth& e)
 {
    double earthX = e.getPos().getMetersX();

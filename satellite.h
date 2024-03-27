@@ -20,6 +20,10 @@
 
 class TestSatellite;
 
+/***************************************************
+ * SATELLITE
+ * The code needed for the parent class, satellite.
+ ***************************************************/
 class Satellite
 {
 public:

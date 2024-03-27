@@ -1,4 +1,20 @@
-﻿  test.cpp
+﻿  acceleration.cpp
+  direction.cpp
+  dragon.cpp
+  dreamChaser.cpp
+  hubble.cpp
+  Lab07.cpp
+  position.cpp
+  GPS.cpp
+  satellite.cpp
+  sputnik.cpp
+  starlink.cpp
+  test.cpp
   testSatellite.cpp
+  uiDraw.cpp
+  uiInteract.cpp
+  velocity.cpp
+  whole.cpp
   Generating Code...
-  Lab07.vcxproj -> C:\programmingProjects\PublicRepos\Lab07OrbitPrototype\x64\Debug\Lab07.exe
+  LINK : C:\programmingProjects\PublicRepos\OrbitLab\x64\Debug\Lab07.exe not found or not built by the last incremental link; performing full link
+  Lab07.vcxproj -> C:\programmingProjects\PublicRepos\OrbitLab\x64\Debug\Lab07.exe

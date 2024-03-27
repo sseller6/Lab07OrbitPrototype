@@ -9,6 +9,9 @@
 
 #include "dreamChaser.h"
 
+ /***************************************************
+  * DREAM CHASER : OPERATOR = OVERLOAD
+  ***************************************************/
 DreamChaser& DreamChaser::operator= (DreamChaser& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ DreamChaser& DreamChaser::operator= (DreamChaser& rhs)
    return *this;
 }
 
+/***************************************************
+ * DREAM CHASER : MOVE
+ ***************************************************/
 void DreamChaser::move(float time, Earth& earth)
 {
    Physics p;
@@ -46,7 +52,9 @@ void DreamChaser::move(float time, Earth& earth)
    pos.computeNewPos(vel, acc, time);
 }
 
-// Rotate the DreamChaser.
+/***************************************************
+ * DREAM CHASER : ROTATE
+ ***************************************************/
 void DreamChaser::rotate(bool clockwise)
 {
    if (clockwise)
@@ -59,6 +67,9 @@ void DreamChaser::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * DREAM CHASER : DRAW
+ ***************************************************/
 void DreamChaser::draw(ogstream& gout) const
 {
    gout.drawShip(pos, dir.getAngle(), thrusting);

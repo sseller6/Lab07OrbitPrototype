@@ -9,6 +9,9 @@
 
 #include "sputnik.h"
 
+/***************************************************
+ * SPUTNIK : OPERATOR = OVERLOAD
+ ***************************************************/
 Sputnik& Sputnik::operator= (Sputnik& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ Sputnik& Sputnik::operator= (Sputnik& rhs)
    return *this;
 }
 
+/***************************************************
+ * SPUTNIK : ROTATE
+ ***************************************************/
 void Sputnik::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void Sputnik::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * SPUTNIK : DRAW
+ ***************************************************/
 void Sputnik::draw(ogstream& gout) const
 {
    gout.drawSputnik(pos, dir.getAngle());

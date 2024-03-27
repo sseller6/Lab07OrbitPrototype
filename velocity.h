@@ -1,14 +1,20 @@
-//
-//  velocity.hpp
-//  Lab07
-//
-//  Created by Josh Hamilton on 2/23/24.
-//
+/***********************************************************************
+ * Header File:
+ *    Velocity
+ * Author:
+ *    Josh and Steven
+ * Summary:
+ *    The code for the header file, velocity.h.
+ ************************************************************************/
 
 #pragma once
 #include <cmath>
 #include "acceleration.h"
 
+/***************************************************
+ * VELOCITY
+ * All the code needed for handling velocity.
+ ***************************************************/
 class Velocity
 {
 public:

@@ -9,6 +9,9 @@
 
 #include "starlink.h"
 
+/***************************************************
+ * STARLINK : OPERATOR = OVERLOAD
+ ***************************************************/
 Starlink& Starlink::operator= (Starlink& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ Starlink& Starlink::operator= (Starlink& rhs)
    return *this;
 }
 
+/***************************************************
+ * STARLINK : ROTATE
+ ***************************************************/
 void Starlink::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void Starlink::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * STARLINK : DRAW
+ ***************************************************/
 void Starlink::draw(ogstream& gout) const
 {
    gout.drawStarlink(pos, dir.getAngle());

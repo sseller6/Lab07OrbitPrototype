@@ -13,9 +13,12 @@
 #include "velocity.h"
 #include "acceleration.h"
 #include "earth.h"
-
 #include "whole.h"
 
+/***************************************************
+ * DREAM CHASER
+ * The blueprints for the Dream Chaser.
+ ***************************************************/
 class DreamChaser : public Whole
 {
 public:

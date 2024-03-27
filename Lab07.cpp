@@ -1,6 +1,6 @@
 /*************************************************************
  * 1. Name:
- *      Demo
+ *      Josh and Steven
  * 2. Assignment Name:
  *      Lab 07: Orbit Simulator
  * 3. Assignment Description:

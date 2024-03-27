@@ -12,9 +12,12 @@
 #include "position.h"
 #include "velocity.h"
 #include "acceleration.h"
-
 #include "whole.h"
 
+/***************************************************
+ * HUBBLE
+ * The blueprints for creating a hubble.
+ ***************************************************/
 class Hubble : public Whole
 {
 public:

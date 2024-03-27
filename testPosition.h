@@ -49,6 +49,9 @@ private:
       return (difference >= -tolerence) && (difference <= tolerence);
    }
 
+   /***************************************************
+    * TESTPOSITION : DEFAULT CONSTRUCTOR
+    ***************************************************/
    void defaultConstructor()
    {  // setup
       // exercise
@@ -58,6 +61,9 @@ private:
       assertUnit(pos.y == 0.0);
    }  // teardown
 
+   /***************************************************
+    * TESTPOSITION : NON-DEFAULT CONSTRUCTOR
+    ***************************************************/
    void nonDefaultConstructor()
    {  // setup
       // exercise
@@ -67,6 +73,9 @@ private:
       assertUnit(pos.y == 9000.0);
    }  // teardown
 
+   /***************************************************
+    * TESTPOSITION : COPY CONSTRUCTOR
+    ***************************************************/
    void copyConstructor()
    {  // setup
       Position pos1;
@@ -81,6 +90,9 @@ private:
       assertUnit(pos2.y == 2000.0);
    }  // teardown
 
+   /***************************************************
+    * TESTPOSITION : ASSIGNMENT
+    ***************************************************/
    void assignment()
    {  // setup
       Position pos1;
@@ -94,7 +106,10 @@ private:
       assertUnit(pos2.x == 4000.0);
       assertUnit(pos2.y == 2000.0);
    }  // teardown
-   
+
+   /***************************************************
+    * TESTPOSITION : SET METERS
+    ***************************************************/
    void setMeters()
    {  // setup
       Position pos;
@@ -107,7 +122,10 @@ private:
       assertUnit(pos.x == 5000.0);
       assertUnit(pos.y == 3000.0);
    }  // teardown
- 
+
+   /***************************************************
+    * TESTPOSITION : SET PIXELS
+    ***************************************************/
    void setPixels()
    {  // setup
       Position pos;
@@ -120,7 +138,10 @@ private:
       assertUnit(pos.x == 6000.0);
       assertUnit(pos.y == 12000.0);
    }  // teardown
-   
+
+   /***************************************************
+    * TESTPOSITION : ADD METERS
+    ***************************************************/
    void addMeters()
    {  // setup
       Position pos;
@@ -133,7 +154,10 @@ private:
       assertUnit(pos.x == 400.0);
       assertUnit(pos.y == 2400.0);
    }  // teardown
-   
+
+   /***************************************************
+    * TESTPOSITION : ADD PIXELS
+    ***************************************************/
    void addPixels()
    {  // setup
       Position pos;

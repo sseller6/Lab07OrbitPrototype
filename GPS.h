@@ -12,9 +12,12 @@
 #include "position.h"
 #include "velocity.h"
 #include "acceleration.h"
-
 #include "whole.h"
 
+/***************************************************
+ * GPS
+ * The blueprints for creaing a GPS.
+ ***************************************************/
 class GPS : public Whole
 {
 public:

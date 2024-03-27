@@ -1,10 +1,10 @@
 /***********************************************************************
  * Source File:
- *    TEST KNIGHT
+ *    Test Satellite
  * Author:
- *    <your name here>
+ *    Josh and Steven
  * Summary:
- *    The unit tests for the knight
+ *    The unit tests for the Satellite.
  ************************************************************************/
 
 #define _USE_MATH_DEFINES
@@ -14,6 +14,9 @@
 #include <cassert>
 #include <cmath>
 
+/***************************************************
+ * TEST SATELLITE : MOVE ZERO SECONDS
+ ***************************************************/
 void TestSatellite::move_ZeroSeconds()
 {
    // SETUP
@@ -35,6 +38,9 @@ void TestSatellite::move_ZeroSeconds()
    delete s;
 }
 
+/***************************************************
+ * TEST SATELLITE : MOVE ONE SECOND
+ ***************************************************/
 void TestSatellite::move_OneSecond()
 {
    // SETUP
@@ -56,6 +62,9 @@ void TestSatellite::move_OneSecond()
    delete s;
 }
 
+/***************************************************
+ * TEST SATELLITE : MOVE FORTY EIGHT SECONDS
+ ***************************************************/
 void TestSatellite::move_FortyEightSeconds()
 {
    // SETUP
