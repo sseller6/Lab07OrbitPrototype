@@ -1,10 +1,10 @@
 /***********************************************************************
  * Header File:
- *    Sputnik : The representation of a child class, Sputnik.
+ *    StarlinkArray : The representation of a child class, StarlinkArray.
  * Author:
  *    Josh & Steven
  * Summary:
- *    The Sputnik inherits from the Whole class.
+ *    The Starlink array breaks off of the Starlink.
  ************************************************************************/
 
 #pragma once
@@ -13,24 +13,21 @@
 #include "velocity.h"
 #include "acceleration.h"
 
-#include "whole.h"
+#include "part.h"
 
-class Sputnik : public Whole
+class StarlinkArray : public Part
 {
 public:
    // constructors
-   Sputnik() : Whole() {}
-   Sputnik(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir) {}
+   StarlinkArray() : Part() {}
+   StarlinkArray(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
 
    // operators
-   Sputnik& operator= (Sputnik& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Sputnik"; }
+   StarlinkArray& operator= (StarlinkArray& rhs);
    
 private:
    double radius = 4.0;

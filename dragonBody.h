@@ -1,10 +1,10 @@
 /***********************************************************************
  * Header File:
- *    Starlink : The representation of a child class, Starlink.
+ *    DragonBody : The representation of a child class, DragonBody.
  * Author:
  *    Josh & Steven
  * Summary:
- *    The Starlink inherits from the Whole class.
+ *    The Dragon body breaks off of the Dragon.
  ************************************************************************/
 
 #pragma once
@@ -13,24 +13,21 @@
 #include "velocity.h"
 #include "acceleration.h"
 
-#include "whole.h"
+#include "part.h"
 
-class Starlink : public Whole
+class DragonBody : public Part
 {
 public:
    // constructors
-   Starlink() : Whole() {}
-   Starlink(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir) {}
+   DragonBody() : Part() {}
+   DragonBody(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
 
    // operators
-   Starlink& operator= (Starlink& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Starlink"; }
+   DragonBody& operator= (DragonBody& rhs);
    
 private:
    double radius = 6.0;

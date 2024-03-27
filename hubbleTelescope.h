@@ -1,10 +1,10 @@
 /***********************************************************************
  * Header File:
- *    Hubble : The representation of a child class, Hubble.
+ *    HubbleTelescope : The representation of a child class, HubbleTelescope.
  * Author:
  *    Josh & Steven
  * Summary:
- *    The Hubble inherits from the Whole class.
+ *    The Hubble telescope breaks off of the Hubble.
  ************************************************************************/
 
 #pragma once
@@ -13,24 +13,21 @@
 #include "velocity.h"
 #include "acceleration.h"
 
-#include "whole.h"
+#include "part.h"
 
-class Hubble : public Whole
+class HubbleTelescope : public Part
 {
 public:
    // constructors
-   Hubble() : Whole() {}
-   Hubble(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir) {}
+   HubbleTelescope() : Part() {}
+   HubbleTelescope(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
 
    // operators
-   Hubble& operator= (Hubble& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Hubble"; }
+   HubbleTelescope& operator= (HubbleTelescope& rhs);
    
 private:
    double radius = 10.0;

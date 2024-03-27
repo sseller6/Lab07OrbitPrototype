@@ -1,10 +1,10 @@
 /***********************************************************************
  * Header File:
- *    Dragon : The representation of a child class, Dragon.
+ *    GPSBody : The representation of a child class, GPSBody.
  * Author:
  *    Josh & Steven
  * Summary:
- *    The Dragon inherits from the Whole class.
+ *    The GPS body breaks off of the GPS.
  ************************************************************************/
 
 #pragma once
@@ -13,24 +13,21 @@
 #include "velocity.h"
 #include "acceleration.h"
 
-#include "whole.h"
+#include "part.h"
 
-class Dragon : public Whole
+class GPSBody : public Part
 {
 public:
    // constructors
-   Dragon() : Whole() {}
-   Dragon(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir) {}
+   GPSBody() : Part() {}
+   GPSBody(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
 
    // operators
-   Dragon& operator= (Dragon& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Dragon"; }
+   GPSBody& operator= (GPSBody& rhs);
    
 private:
    double radius = 7.0;

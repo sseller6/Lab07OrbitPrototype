@@ -27,10 +27,10 @@ public:
 
    // constructors
    Satellite()  { }
-   Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir) { }
+   Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir), radius(0.0) { }
    
    // getters
-   //float getRadius() const { return radius; }
+   float getRadius() const { return radius; }
    Position getPosition() const { return pos; }
    
    // living state
@@ -45,7 +45,6 @@ public:
    virtual void rotate(bool clockwise = true) { }
    virtual void draw(ogstream &gout) const    { }
    //virtual void breakApart()                  { }
-   //virtual void input(ogstream &ui)           { }
    //virtual void destroy()                     { }
 
    // operators
@@ -59,7 +58,7 @@ protected:
    Velocity vel;
    Direction dir;
    //bool dead;
-   //float radius;
+   float radius;
 
    class Physics
    {

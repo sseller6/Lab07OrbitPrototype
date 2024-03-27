@@ -31,4 +31,7 @@ public:
 
    // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
    string getString() { return "Successfully Displayed GPS"; }
+   
+private:
+   double radius = 12.0;
 };
