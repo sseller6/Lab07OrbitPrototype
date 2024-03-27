@@ -15,6 +15,10 @@
 
 #include "whole.h"
 
+/***************************************************
+ * STARLINK
+ * All the code for the child class, starlink.
+ ***************************************************/
 class Starlink : public Whole
 {
 public:

@@ -12,6 +12,10 @@
 #include "position.h"
 #include "direction.h"
 
+/***************************************************
+ * EARTH
+ * The earth class is pretty simple.
+ ***************************************************/
 class Earth
 {
 public:
@@ -34,7 +38,10 @@ private:
 };
 
 
-// Always returns simple, pre-specified values.
+/***************************************************
+ * STUB EARTH
+ * Always returns simple, pre-specified values.
+ ***************************************************/
 class StubEarth : public Earth
 {
 public:

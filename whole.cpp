@@ -4,11 +4,14 @@
  * Author:
  *    Josh & Steven
  * Summary:
- *    
+ *    The source code for whole.cpp.
  ************************************************************************/
 
 #include "whole.h"
 
+/***************************************************
+ * WHOLE : OPERATOR = OVERLOAD
+ ***************************************************/
 void Whole::operator= (Whole& rhs)
 {
    pos = rhs.pos;

@@ -15,6 +15,10 @@
 
 #include "whole.h"
 
+/***************************************************
+ * DRAGON
+ * All the information for the dragon.
+ ***************************************************/
 class Dragon : public Whole
 {
 public:

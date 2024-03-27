@@ -12,6 +12,10 @@
 
 #include "satellite.h"
 
+/***************************************************
+ * WHOLE
+ * The code for the child and parent class, whole.
+ ***************************************************/
 class Whole : public Satellite
 {
 public:

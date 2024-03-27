@@ -9,6 +9,9 @@
 
 #include "dragon.h"
 
+/***************************************************
+ * DRAGON : OPERATOR = OVERLOAD
+ ***************************************************/
 Dragon& Dragon::operator= (Dragon& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ Dragon& Dragon::operator= (Dragon& rhs)
    return *this;
 }
 
+/***************************************************
+ * DRAGON : ROTATE
+ ***************************************************/
 void Dragon::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void Dragon::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * DRAGON : DRAW
+ ***************************************************/
 void Dragon::draw(ogstream& gout) const
 {
    gout.drawCrewDragon(pos, dir.getAngle());

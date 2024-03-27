@@ -12,9 +12,12 @@
 #include "position.h"
 #include "velocity.h"
 #include "acceleration.h"
-
 #include "whole.h"
 
+/***************************************************
+ * SPUTNIK
+ * The information for the child class, Sputnik.
+ ***************************************************/
 class Sputnik : public Whole
 {
 public:

@@ -2,12 +2,12 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\programmingProjects\PublicRepos\Lab07OrbitPrototype\x64\Debug\Lab07.exe</FullPath>
+      <FullPath>C:\programmingProjects\PublicRepos\OrbitLab\x64\Debug\Lab07.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\programmingProjects\PublicRepos\Lab07OrbitPrototype\UpgradeLog.htm</FullPath>
+      <FullPath>C:\programmingProjects\PublicRepos\OrbitLab\UpgradeLog.htm</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

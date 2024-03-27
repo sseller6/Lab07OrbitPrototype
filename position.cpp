@@ -1,6 +1,6 @@
 /***********************************************************************
  * Source File:
- *    Point : The representation of a position on the screen
+ *    POSITION : The representation of a position on the screen
  * Author:
  *    Br. Helfrich
  * Summary:
@@ -11,6 +11,9 @@
 #include <cassert>
 
 
+/***************************************************
+ * POSITION : NON-DEFAULT CONSTRUCTOR
+ ***************************************************/
 Position::Position(double x, double y) : x(0.0), y(0.0)
 {
    setMetersX(x);

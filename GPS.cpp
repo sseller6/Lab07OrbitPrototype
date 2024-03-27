@@ -9,6 +9,9 @@
 
 #include "GPS.h"
 
+/***************************************************
+ * GPS : OPERATOR = OVERLOAD
+ ***************************************************/
 GPS& GPS::operator= (GPS& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ GPS& GPS::operator= (GPS& rhs)
    return *this;
 }
 
+/***************************************************
+ * GPS : ROTATE
+ ***************************************************/
 void GPS::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void GPS::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * GPS : DRAW
+ ***************************************************/
 void GPS::draw(ogstream &gout) const
 {
    gout.drawGPS(pos, dir.getAngle());

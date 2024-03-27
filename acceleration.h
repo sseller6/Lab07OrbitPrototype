@@ -1,13 +1,19 @@
-//
-//  acceleration.hpp
-//  Lab07
-//
-//  Created by Josh Hamilton on 2/23/24.
-//
+/***********************************************************************
+ * Header File:
+ *    Acceleration
+ * Author:
+ *    Josh and Steven
+ * Summary:
+ *    The header file for acceleration.
+ ************************************************************************/
 
 #pragma once
 #include <cmath>
 
+/***************************************************
+ * ACCELERATION
+ * All the code needed for handling acceleration.
+ ***************************************************/
 class Acceleration
 {
 public:

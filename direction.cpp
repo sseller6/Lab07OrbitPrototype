@@ -10,6 +10,9 @@
 
 #include "direction.h"
 
+/***************************************************
+ * DIRECTION : NORMALIZE
+ ***************************************************/
 void Direction::normalize()
 {
    while (angle > 2 * M_PI)
