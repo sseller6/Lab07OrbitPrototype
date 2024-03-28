@@ -31,38 +31,37 @@ public:
 
    // constructors
    Satellite()  { }
-   Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir), radius(0.0) { }
+   Satellite(Position &pos, Velocity &vel, Direction &dir) : pos(pos), vel(vel), dir(dir) { }
    
    // getters
-   float getRadius() const { return radius; }
+   virtual double getRadius() const { return radius; }
    Position getPosition() const { return pos; }
    
-   // living state
-   //bool isDead() const { return dead; }
-   //void kill()   { dead = true; }
+   // living state & collision
+   bool isInside(Satellite& sat) const;
+   bool isInside(Earth &earth)   const;
+   bool isDead() const { return dead; }
+   void kill()   { dead = true; }
 
    // misc   
    virtual void move(float time, Earth& earth);
    void setRotation(Direction rotation) { dir = rotation; }
 
    // virtuals
-   virtual void rotate(bool clockwise = true) { }
-   virtual void draw(ogstream &gout) const    { }
+   virtual void rotate(bool clockwise = true)  { }
+   virtual void draw(ogstream &gout) const     { }
    //virtual void breakApart()                  { }
-   //virtual void destroy()                     { }
+   virtual void destroy()                     { std::cout << "DESTROYING SAT" << std::endl; delete this; }
 
    // operators
    void operator= (Satellite& rhs);
-
-   // tempORARY
-   virtual string getString() { return "Satellite"; }
 
 protected:
    Position pos;
    Velocity vel;
    Direction dir;
-   //bool dead;
-   float radius;
+   bool dead = false;
+   double radius = 0.0;
 
    class Physics
    {

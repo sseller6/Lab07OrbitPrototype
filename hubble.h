@@ -28,12 +28,10 @@ public:
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
+   double getRadius() const override { return radius; }
 
    // operators
    Hubble& operator= (Hubble& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Hubble"; }
    
 private:
    double radius = 10.0;

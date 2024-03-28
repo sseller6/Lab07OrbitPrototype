@@ -75,14 +75,14 @@ public:
       Hubble* h = new Hubble(posHubble, velHubble, dirHubble);
       sats.push_back(h);
 
-      // Dragon   // FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIX
+      // Dragon
       Position posDragon(0, 8000000);
       Velocity velDragon(-7900, 0);
       Direction dirDragon(random(0.0, 2 * M_PI));
       Dragon* d = new Dragon(posDragon, velDragon, dirDragon);
       sats.push_back(d);
       
-      // Starlink  // FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIX
+      // Starlink
       Position posStarlink(0, -13020000);
       Velocity velStarlink(5800, 0);
       Direction dirStarlink(random(0.0, 2 * M_PI));
@@ -166,6 +166,31 @@ void callBack(const Interface* pUI, void* p)
 
    pDemo->ship->move(48, pDemo->earth);
    
+
+   //
+   // check for collisions
+   //
+   for (Satellite * satCheck : pDemo->sats)
+   {
+      std::cout << "START" << std::endl;
+      // check against each other satellite
+      for (Satellite * sat : pDemo->sats)
+      {
+         if (sat != satCheck)
+         {
+            if (satCheck->isInside(*sat))
+            {
+               std::cout << "DESTROY" << std::endl;
+               satCheck->destroy();
+               sat->destroy();
+            }
+         }
+      }
+
+      // check against the earth
+      
+   }
+
 
    //
    // draw everything

@@ -29,12 +29,10 @@ public:
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
+   double getRadius() const override { return radius; }
 
    // operators
    Dragon& operator= (Dragon& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Dragon"; }
    
 private:
    double radius = 7.0;

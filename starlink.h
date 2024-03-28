@@ -29,12 +29,10 @@ public:
    // attributes
    void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
+   double getRadius() const override { return radius; }
 
    // operators
    Starlink& operator= (Starlink& rhs);
-
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed Starlink"; }
    
 private:
    double radius = 6.0;

@@ -20,6 +20,35 @@ void Satellite::operator= (Satellite& rhs)
 }
 
 /***************************************************
+ * SATELLITE : CHECK COLLISION W/OTHER SATELLITE
+ ***************************************************/
+bool Satellite::isInside(Satellite& sat) const
+{
+   double x1 = pos.getPixelsX();
+   double x2 = sat.getPosition().getPixelsX();
+   double y1 = pos.getPixelsY();
+   double y2 = sat.getPosition().getPixelsY();
+   double distance = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+   std::cout << "D: " << distance << std::endl;
+   std::cout << "R1 + R2: " << this->getRadius() + sat.getRadius() << std::endl;
+   return distance < this->getRadius() + sat.getRadius();
+}
+
+/***************************************************
+ * SATELLITE : CHECK COLLISION W/EARTH
+ ***************************************************/
+bool Satellite::isInside(Earth& earth) const
+{
+   /*double x1 = pos.getPixelsX();
+   double x2 = sat.getPosition().getPixelsX();
+   double y1 = pos.getPixelsY();
+   double y2 = sat.getPosition().getPixelsY();
+   double distance = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+   return distance < radius + sat.getRadius();*/
+return false;
+}
+
+/***************************************************
  * SATELLITE : MOVE
  ***************************************************/
 void Satellite::move(float time, Earth& earth)

@@ -31,13 +31,12 @@ public:
    void thrust(bool thrusting = true ) { this->thrusting = thrusting; }
    void move(float time, Earth& earth) override;
    void draw(ogstream& gout) const override;
+   double getRadius() const override { return radius; }
 
    // operators
    DreamChaser& operator= (DreamChaser& rhs);
 
-   // tempORARYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-   string getString() { return "Successfully Displayed DreamChaser"; }
-
 private:
+   double radius = 10.0;
    bool thrusting;
 };
