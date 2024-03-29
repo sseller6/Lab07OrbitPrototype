@@ -9,6 +9,9 @@
 
 #include "hubbleTelescope.h"
 
+/***************************************************
+ * HUBBLE TELESCOPE: OPERATOR = OVERLOAD
+ ***************************************************/
 HubbleTelescope& HubbleTelescope::operator= (HubbleTelescope& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ HubbleTelescope& HubbleTelescope::operator= (HubbleTelescope& rhs)
    return *this;
 }
 
+/***************************************************
+ * HUBBLE TELESCOPE: ROTATE
+ ***************************************************/
 void HubbleTelescope::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void HubbleTelescope::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * HUBBLE TELESCOPE: DRAW
+ ***************************************************/
 void HubbleTelescope::draw(ogstream& gout) const
 {
    gout.drawHubbleTelescope(pos, dir.getAngle());

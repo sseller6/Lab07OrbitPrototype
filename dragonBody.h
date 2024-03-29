@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+/***************************************************
+ * DRAGON BODY
+ * All the information for the dragon body.
+ ***************************************************/
 class DragonBody : public Part
 {
 public:

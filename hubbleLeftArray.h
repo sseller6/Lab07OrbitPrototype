@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+/***************************************************
+ * HUBBLE LEFT ARRAY
+ * The left array part of the hubble telescope.
+ ***************************************************/
 class HubbleLeftArray : public Part
 {
 public:

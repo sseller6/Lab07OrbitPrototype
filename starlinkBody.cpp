@@ -9,6 +9,9 @@
 
 #include "starlinkBody.h"
 
+/***************************************************
+ * STARLINK BODY : OPERATOR = OVERLOAD
+ ***************************************************/
 StarlinkBody& StarlinkBody::operator= (StarlinkBody& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ StarlinkBody& StarlinkBody::operator= (StarlinkBody& rhs)
    return *this;
 }
 
+/***************************************************
+ * STARLINK BODY : ROTATE
+ ***************************************************/
 void StarlinkBody::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void StarlinkBody::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * STARLINK BODY : DRAW
+ ***************************************************/
 void StarlinkBody::draw(ogstream& gout) const
 {
    gout.drawStarlinkBody(pos, dir.getAngle());

@@ -9,6 +9,9 @@
 
 #include "starlinkArray.h"
 
+/***************************************************
+ * STARLINK ARRAY: OPERATOR = OVERLOAD
+ ***************************************************/
 StarlinkArray& StarlinkArray::operator= (StarlinkArray& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ StarlinkArray& StarlinkArray::operator= (StarlinkArray& rhs)
    return *this;
 }
 
+/***************************************************
+ * STARLINK ARRAY: ROTATE
+ ***************************************************/
 void StarlinkArray::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void StarlinkArray::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * STARLINK ARRAY: DRAW
+ ***************************************************/
 void StarlinkArray::draw(ogstream& gout) const
 {
    gout.drawStarlinkArray(pos, dir.getAngle());

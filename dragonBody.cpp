@@ -9,6 +9,9 @@
 
 #include "dragonBody.h"
 
+/***************************************************
+ * DRAGON BODY : OPERATOR = OVERLOAD
+ ***************************************************/
 DragonBody& DragonBody::operator= (DragonBody& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ DragonBody& DragonBody::operator= (DragonBody& rhs)
    return *this;
 }
 
+/***************************************************
+ * DRAGON BODY : ROTATE
+ ***************************************************/
 void DragonBody::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void DragonBody::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * DRAGON BODY : DRAW
+ ***************************************************/
 void DragonBody::draw(ogstream& gout) const
 {
    gout.drawCrewDragonCenter(pos, dir.getAngle());

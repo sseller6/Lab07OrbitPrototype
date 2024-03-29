@@ -12,10 +12,10 @@
 #include "uiDraw.h"
 #include "position.h"
 
- /***************************************************
-  * ACCELERATION
-  * All the code needed for handling acceleration.
-  ***************************************************/
+/***************************************************
+ * STAR
+ * Stars are pretty. This code helps them be pretty.
+ ***************************************************/
 class Star
 {
 public:

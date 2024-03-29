@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+/***************************************************
+ * STARLINK BODY
+ * The code for the broken part, starlink body.
+ ***************************************************/
 class StarlinkBody : public Part
 {
 public:

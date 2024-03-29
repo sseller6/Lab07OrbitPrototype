@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+/***************************************************
+ * HUBBLE COMPUTER
+ * The computer part of the hubble telescope.
+ ***************************************************/
 class HubbleComputer : public Part
 {
 public:

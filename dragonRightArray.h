@@ -15,6 +15,11 @@
 
 #include "part.h"
 
+/***************************************************
+ * DRAGON RIGHT ARRAY
+ * All the code needed for the dragon right array.
+ * It is a child class of the Part class.
+ ***************************************************/
 class DragonRightArray : public Part
 {
 public:

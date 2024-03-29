@@ -9,6 +9,9 @@
 
 #include "GPSRightArray.h"
 
+/***************************************************
+ * GPS LEFT ARRAY : OPERATOR = OVERLOAD
+ ***************************************************/
 GPSRightArray& GPSRightArray::operator= (GPSRightArray& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ GPSRightArray& GPSRightArray::operator= (GPSRightArray& rhs)
    return *this;
 }
 
+/***************************************************
+ * GPS LEFT ARRAY : ROTATE
+ ***************************************************/
 void GPSRightArray::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void GPSRightArray::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * GPS LEFT ARRAY : DRAW
+ ***************************************************/
 void GPSRightArray::draw(ogstream& gout) const
 {
    gout.drawGPSRight(pos, dir.getAngle());

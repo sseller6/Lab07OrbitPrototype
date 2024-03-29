@@ -9,6 +9,9 @@
 
 #include "part.h"
 
+/***************************************************
+ * PART : OPERATOR = OVERLOAD
+ ***************************************************/
 void Part::operator= (Part& rhs)
 {
    pos = rhs.pos;

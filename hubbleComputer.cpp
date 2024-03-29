@@ -9,6 +9,9 @@
 
 #include "hubbleComputer.h"
 
+/***************************************************
+ * HUBBLE COMPUTER : OPERATOR = OVERLOAD
+ ***************************************************/
 HubbleComputer& HubbleComputer::operator= (HubbleComputer& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ HubbleComputer& HubbleComputer::operator= (HubbleComputer& rhs)
    return *this;
 }
 
+/***************************************************
+ * HUBBLE COMPUTER : ROTATE
+ ***************************************************/
 void HubbleComputer::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void HubbleComputer::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * HUBBLE COMPUTER : DRAW
+ ***************************************************/
 void HubbleComputer::draw(ogstream& gout) const
 {
    gout.drawHubbleComputer(pos, dir.getAngle());

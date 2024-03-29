@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+ /***************************************************
+  * HUBBLE TELESCOPE
+  * The telescope part of the hubble telescope.
+  ***************************************************/
 class HubbleTelescope : public Part
 {
 public:

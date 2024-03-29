@@ -8,7 +8,9 @@
  ************************************************************************/
 
 #include "dragonLeftArray.h"
-
+/***************************************************
+ * DRAGON LEFT ARRAY : OPERATOR = OVERLOAD
+ ***************************************************/
 DragonLeftArray& DragonLeftArray::operator= (DragonLeftArray& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +20,9 @@ DragonLeftArray& DragonLeftArray::operator= (DragonLeftArray& rhs)
    return *this;
 }
 
+/***************************************************
+ * DRAGON LEFT ARRAY : ROTATE
+ ***************************************************/
 void DragonLeftArray::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +35,9 @@ void DragonLeftArray::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * DRAGON LEFT ARRAY : DRAW
+ ***************************************************/
 void DragonLeftArray::draw(ogstream& gout) const
 {
    gout.drawCrewDragonLeft(pos, dir.getAngle());

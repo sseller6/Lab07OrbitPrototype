@@ -9,6 +9,9 @@
 
 #include "hubbleRightArray.h"
 
+/***************************************************
+ * HUBBLE RIGHT ARRAY : OPERATOR = OVERLOAD
+ ***************************************************/
 HubbleRightArray& HubbleRightArray::operator= (HubbleRightArray& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ HubbleRightArray& HubbleRightArray::operator= (HubbleRightArray& rhs)
    return *this;
 }
 
+/***************************************************
+ * HUBBLE RIGHT ARRAY : ROTATE
+ ***************************************************/
 void HubbleRightArray::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void HubbleRightArray::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * HUBBLE RIGHT ARRAY : DRAW
+ ***************************************************/
 void HubbleRightArray::draw(ogstream& gout) const
 {
    gout.drawHubbleRight(pos, dir.getAngle());

@@ -15,6 +15,11 @@
 
 #include "part.h"
 
+/***************************************************
+ * GPS LEFT ARRAY
+ * The information for creating the parts of the
+ * GPS left array.
+ ***************************************************/
 class GPSLeftArray : public Part
 {
 public:

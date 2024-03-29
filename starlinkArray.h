@@ -15,6 +15,10 @@
 
 #include "part.h"
 
+/***************************************************
+ * STARLINK ARRAY
+ * The code for the first broken part of starlink.
+ ***************************************************/
 class StarlinkArray : public Part
 {
 public:

@@ -15,6 +15,11 @@
 
 #include "part.h"
 
+/***************************************************
+ * GPS BODY
+ * The information for creating the parts of the 
+ * GPS body.
+ ***************************************************/
 class GPSBody : public Part
 {
 public:

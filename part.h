@@ -12,6 +12,11 @@
 
 #include "satellite.h"
 
+/***************************************************
+ * PART
+ * The parent class which each part of a satelite 
+ * derives from.
+ ***************************************************/
 class Part : public Satellite
 {
 public:

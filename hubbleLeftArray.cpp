@@ -9,6 +9,9 @@
 
 #include "hubbleLeftArray.h"
 
+/***************************************************
+ * HUBBLE LEFT ARRAY : OPERATOR = OVERLOAD
+ ***************************************************/
 HubbleLeftArray& HubbleLeftArray::operator= (HubbleLeftArray& rhs)
 {
    pos = rhs.pos;
@@ -18,6 +21,9 @@ HubbleLeftArray& HubbleLeftArray::operator= (HubbleLeftArray& rhs)
    return *this;
 }
 
+/***************************************************
+ * HUBBLE LEFT ARRAY : ROTATE
+ ***************************************************/
 void HubbleLeftArray::rotate(bool clockwise)
 {
    if (clockwise)
@@ -30,6 +36,9 @@ void HubbleLeftArray::rotate(bool clockwise)
    }
 }
 
+/***************************************************
+ * HUBBLE LEFT ARRAY : DRAW
+ ***************************************************/
 void HubbleLeftArray::draw(ogstream& gout) const
 {
    gout.drawHubbleLeft(pos, dir.getAngle());
