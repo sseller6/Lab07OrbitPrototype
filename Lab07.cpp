@@ -172,7 +172,6 @@ void callBack(const Interface* pUI, void* p)
    //
    for (Satellite * satCheck : pDemo->sats)
    {
-      std::cout << "START" << std::endl;
       // check against each other satellite
       for (Satellite * sat : pDemo->sats)
       {
@@ -180,11 +179,17 @@ void callBack(const Interface* pUI, void* p)
          {
             if (satCheck->isInside(*sat))
             {
-               std::cout << "DESTROY" << std::endl;
                satCheck->destroy();
                sat->destroy();
             }
          }
+      }
+
+      // check against the ship
+      if (satCheck->isInside(*pDemo->ship))
+      {
+         satCheck->destroy();
+         pDemo->ship->destroy();
       }
 
       // check against the earth

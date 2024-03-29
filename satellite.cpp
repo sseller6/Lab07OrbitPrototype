@@ -29,8 +29,6 @@ bool Satellite::isInside(Satellite& sat) const
    double y1 = pos.getPixelsY();
    double y2 = sat.getPosition().getPixelsY();
    double distance = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-   std::cout << "D: " << distance << std::endl;
-   std::cout << "R1 + R2: " << this->getRadius() + sat.getRadius() << std::endl;
    return distance < this->getRadius() + sat.getRadius();
 }
 
