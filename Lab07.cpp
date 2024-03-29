@@ -115,6 +115,7 @@ public:
    Star stars[200];
    Earth earth;
    Position ptUpperRight;
+   bool gameover = false;
 };
 
 /*************************************
@@ -130,95 +131,119 @@ void callBack(const Interface* pUI, void* p)
    // is the first step of every single callback function in OpenGL.    
    Demo* pDemo = (Demo*)p;
 
-   //
-   // accept input
-   //
-
-   // move by a little
-   if (pUI->isDown())
-      pDemo->ship->thrust();
-   if (pUI->isLeft())
-      pDemo->ship->rotate(false);
-   if (pUI->isRight())
-      pDemo->ship->rotate();
-
-
-   //
-   // perform all the game logic
-   //
-
-   // rotate the earth
-   pDemo->earth.rotate((2 * M_PI) / (double)1800);
-   
-   // rotate the satellites
-   for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i]->rotate();
-   
-   // phase up the stars
-   for (int i = 0; i < 200; i++)
+   if (!pDemo->gameover)
    {
-      pDemo->stars[i].phaseUp();
-   }
-   
-   // do physics stuff
-   for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i]->move(48, pDemo->earth); // t = 48s
+      //
+      // accept input
+      //
 
-   pDemo->ship->move(48, pDemo->earth);
-   
+      // move by a little
+      if (pUI->isDown())
+         pDemo->ship->thrust();
+      if (pUI->isLeft())
+         pDemo->ship->rotate(false);
+      if (pUI->isRight())
+         pDemo->ship->rotate();
 
-   //
-   // check for collisions
-   //
-   for (Satellite * satCheck : pDemo->sats)
-   {
-      // check against each other satellite
-      for (Satellite * sat : pDemo->sats)
+
+      //
+      // perform all the game logic
+      //
+
+      // rotate the earth
+      pDemo->earth.rotate((2 * M_PI) / (double)1800);
+   
+      // rotate the satellites
+      for (int i = 0; i < pDemo->sats.size(); i++)
+         pDemo->sats[i]->rotate();
+   
+      // phase up the stars
+      for (int i = 0; i < 200; i++)
       {
-         if (sat != satCheck)
-         {
-            if (satCheck->isInside(*sat))
+         pDemo->stars[i].phaseUp();
+      }
+   
+      // do physics stuff
+      for (int i = 0; i < pDemo->sats.size(); i++)
+         pDemo->sats[i]->move(48, pDemo->earth); // t = 48s
+
+   
+      pDemo->ship->move(48, pDemo->earth);
+   
+
+      //
+      // check for collisions
+      //
+      for (Satellite * satCheck : pDemo->sats)
+      {
+         if (!satCheck->isDead() && !pDemo->gameover) {
+            // check against each other satellite
+            for (Satellite* sat : pDemo->sats)
             {
-               satCheck->destroy();
-               sat->destroy();
+               if (!sat->isDead() && !pDemo->gameover) {
+                  if (sat != satCheck)
+                  {
+                     if (satCheck->isInside(*sat))
+                     {
+                        satCheck->kill();
+                        sat->kill();
+                     }
+                  }
+               }
+            }
+
+            // check against the ship
+            if (!pDemo->gameover)
+            {
+               if (satCheck->isInside(*pDemo->ship))
+               {
+                  satCheck->kill();
+                  pDemo->ship->kill();
+                  pDemo->gameover = true;
+               }
+            }
+
+            // check against the earth
+
+
+            if (satCheck->isDead())
+            {
+               //satCheck->destroy();
             }
          }
       }
 
-      // check against the ship
-      if (satCheck->isInside(*pDemo->ship))
+
+      //
+      // draw everything
+      //
+
+      Position pt;
+      ogstream gout(pt);
+
+      // draw satellites
+      for (int i = 0; i < pDemo->sats.size(); i++)
+         pDemo->sats[i]->draw(gout);
+   
+      if (!pDemo->gameover)
       {
-         satCheck->destroy();
-         pDemo->ship->destroy();
+         pDemo->ship->draw(gout);
+         pDemo->ship->thrust(false);
       }
 
-      // check against the earth
-      
+      // draw stars
+      for (int i = 0; i < 200; i++)
+      {
+         pDemo->stars[i].draw(gout);
+      }
+
+      // draw the earth
+      pDemo->earth.draw(gout);
    }
-
-
-   //
-   // draw everything
-   //
-
-   Position pt;
-   ogstream gout(pt);
-
-   // draw satellites
-   for (int i = 0; i < pDemo->sats.size(); i++)
-      pDemo->sats[i]->draw(gout);
-   
-   pDemo->ship->draw(gout);
-   pDemo->ship->thrust(false);
-
-   // draw stars
-   for (int i = 0; i < 200; i++)
+   else
    {
-      pDemo->stars[i].draw(gout);
-   }
 
-   // draw the earth
-   pDemo->earth.draw(gout);
+   }
 }
 
 // Good spot to set our static variables.
