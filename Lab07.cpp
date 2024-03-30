@@ -17,6 +17,7 @@
 #include <cmath>        // for Pies :) Yum
 #include <random>       // we so random
 #include <vector>       // vectors are better :)
+#include <algorithm>    // for find()
 #include "uiInteract.h" // for INTERFACE
 #include "uiDraw.h"     // for RANDOM and DRAW*
 #include "test.h"
@@ -111,6 +112,7 @@ public:
    }
    
    vector<Satellite*> sats;
+   vector<Satellite*> deadSats;
    DreamChaser * ship;
    Star stars[200];
    Earth earth;
@@ -176,11 +178,13 @@ void callBack(const Interface* pUI, void* p)
       //
       for (Satellite * satCheck : pDemo->sats)
       {
-         if (!satCheck->isDead() && !pDemo->gameover) {
+         if (!satCheck->isDead() && !pDemo->gameover)
+         {
             // check against each other satellite
             for (Satellite* sat : pDemo->sats)
             {
-               if (!sat->isDead() && !pDemo->gameover) {
+               if (!sat->isDead() && !pDemo->gameover)
+               {
                   if (sat != satCheck)
                   {
                      if (satCheck->isInside(*sat))
@@ -188,6 +192,10 @@ void callBack(const Interface* pUI, void* p)
                         satCheck->kill();
                         sat->kill();
                      }
+                  }
+                  if (sat->isDead())
+                  {
+                     pDemo->deadSats.push_back(sat);
                   }
                }
             }
@@ -198,17 +206,23 @@ void callBack(const Interface* pUI, void* p)
                if (satCheck->isInside(*pDemo->ship))
                {
                   satCheck->kill();
-                  pDemo->ship->kill();
-                  pDemo->gameover = true;
+//                  pDemo->ship->kill();
+//                  pDemo->gameover = true;
                }
             }
 
             // check against the earth
-
+            if (!satCheck->isDead())
+            {
+               if (satCheck->isInside(pDemo->earth))
+               {
+                  satCheck->kill();
+               }
+            }
 
             if (satCheck->isDead())
             {
-               //satCheck->destroy();
+               pDemo->deadSats.push_back(satCheck);
             }
          }
       }
@@ -239,10 +253,48 @@ void callBack(const Interface* pUI, void* p)
 
       // draw the earth
       pDemo->earth.draw(gout);
+      
+      
+      //
+      // clean up
+      //
+      
+      // decrement life
+      for (Satellite * sat : pDemo->sats)
+      {
+         if (!sat->isDead() && sat->canExpire())
+         {
+            sat->decrementLife();
+            if (sat->isDead())
+            {
+               pDemo->deadSats.push_back(sat);
+            }
+         }
+      }
+      
+      // garbage collection
+      for (vector<Satellite*>::iterator it = pDemo->deadSats.begin(); it < pDemo->deadSats.end(); it++)
+      {
+         if ((*it)->breaks())
+         {
+            vector<Satellite*> B = (*it)->breakApart();
+            (*it)->destroy();
+            pDemo->sats.erase(find(pDemo->sats.begin(), pDemo->sats.end(), (*it)));
+            vector<Satellite*> AB(pDemo->sats.size() + B.size());
+            merge(pDemo->sats.begin(), pDemo->sats.end(), B.begin(), B.end(), AB.begin());
+            pDemo->sats = AB;
+         }
+         else
+         {
+            (*it)->destroy();
+            pDemo->sats.erase(find(pDemo->sats.begin(), pDemo->sats.end(), (*it)));
+         }
+      }
+      pDemo->deadSats.clear();
    }
    else
    {
-
+      // Game Over!
    }
 }
 

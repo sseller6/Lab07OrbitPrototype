@@ -27,7 +27,7 @@ public:
    DreamChaser(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir), thrusting(false) {}
 
    // methods
-   void rotate(bool clockwise = true);
+   void rotate(bool clockwise = true) override;
    void thrust(bool thrusting = true ) { this->thrusting = thrusting; }
    void move(float time, Earth& earth) override;
    void draw(ogstream& gout) const override;

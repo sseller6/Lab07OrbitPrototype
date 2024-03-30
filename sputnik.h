@@ -13,6 +13,7 @@
 #include "velocity.h"
 #include "acceleration.h"
 #include "whole.h"
+#include "fragment.h"
 
 /***************************************************
  * SPUTNIK
@@ -26,9 +27,12 @@ public:
    Sputnik(Position& pos, Velocity& vel, Direction& dir) : Whole(pos, vel, dir) {}
 
    // attributes
-   void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
    double getRadius() const override { return radius; }
+   
+   // destroying
+   vector<Satellite*> breakApart() override;
+   void destroy() override { delete this; }
 
    // operators
    Sputnik& operator= (Sputnik& rhs);

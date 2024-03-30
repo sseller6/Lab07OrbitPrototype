@@ -14,6 +14,7 @@
 #include "acceleration.h"
 
 #include "part.h"
+#include "fragment.h"
 
 /***************************************************
  * DRAGON BODY
@@ -27,9 +28,11 @@ public:
    DragonBody(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
-   void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
    double getRadius() const override { return radius; }
+   
+   // breaking apart
+   vector<Satellite*> breakApart() override;
 
    // operators
    DragonBody& operator= (DragonBody& rhs);

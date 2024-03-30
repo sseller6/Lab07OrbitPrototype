@@ -18,3 +18,18 @@ void Whole::operator= (Whole& rhs)
    vel = rhs.vel;
    dir = rhs.dir;
 }
+
+/***************************************************
+ * WHOLE : ROTATE
+ ***************************************************/
+void Whole::rotate(bool clockwise)
+{
+   if (clockwise)
+   {
+      dir += 0.01;
+   }
+   else
+   {
+      dir += -0.01;
+   }
+}

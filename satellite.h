@@ -9,7 +9,6 @@
  ************************************************************************/
 
 #pragma once
-
 #include "uiDraw.h"
 #include "uiInteract.h"
 #include "position.h"
@@ -17,6 +16,8 @@
 #include "acceleration.h"
 #include "direction.h"
 #include "earth.h"
+
+using namespace std;
 
 class TestSatellite;
 
@@ -48,10 +49,14 @@ public:
    void setRotation(Direction rotation) { dir = rotation; }
 
    // virtuals
-   virtual void rotate(bool clockwise = true)  { }
-   virtual void draw(ogstream &gout) const     { }
-   //virtual void breakApart()                  { }
-   virtual void destroy()                     { std::cout << "DESTROYING SAT" << std::endl; delete this; }
+   virtual void rotate(bool clockwise = true) { }
+   virtual void draw(ogstream &gout) const    { }
+   virtual vector<Satellite*> breakApart()    { return vector<Satellite*>(); }
+   virtual void destroy()                     { delete this; }
+   virtual bool breaks() const { return breaksApart; }
+   virtual int getLifetime() const { return lifetime; }
+   virtual void decrementLife()    { lifetime--; if (lifetime == 0) kill(); }
+   virtual bool canExpire() const  { return expires; }
 
    // operators
    void operator= (Satellite& rhs);
@@ -62,6 +67,9 @@ protected:
    Direction dir;
    bool dead = false;
    double radius = 0.0;
+   bool breaksApart = true;
+   bool expires = false;
+   int lifetime = 0;
 
    class Physics
    {

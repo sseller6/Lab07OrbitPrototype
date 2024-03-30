@@ -13,6 +13,10 @@
 #include "velocity.h"
 #include "acceleration.h"
 #include "whole.h"
+#include "GPSBody.h"
+#include "GPSLeftArray.h"
+#include "GPSRightArray.h"
+#include "fragment.h"
 
 /***************************************************
  * GPS
@@ -26,9 +30,11 @@ public:
    GPS(Position &pos, Velocity &vel, Direction &dir) : Whole(pos, vel, dir) {}
 
    // attributes
-   void rotate(bool clockwise = true);
    void draw(ogstream &gout) const override;
    double getRadius() const override { return radius; }
+   
+   // breaking apart
+   vector<Satellite*> breakApart() override;
 
    // operators
    GPS& operator= (GPS& rhs);

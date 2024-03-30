@@ -24,6 +24,7 @@ public:
    Whole(Position &pos, Velocity &vel, Direction &dir) : Satellite(pos, vel, dir) { }
 
    // virtuals
+   void rotate(bool clockwise = true) override;
    virtual void draw(ogstream &gout) const override { }
 
    // operators

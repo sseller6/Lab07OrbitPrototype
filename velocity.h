@@ -33,6 +33,10 @@ public:
    
    void computeNewVel(Acceleration& acc, double time);
    
+   // Operators
+   Velocity operator+ (const Velocity& rhs) const;
+   Velocity& operator+= (const Velocity& rhs);
+   
 private:
    double dx;
    double dy;

@@ -14,6 +14,7 @@
 #include "acceleration.h"
 
 #include "part.h"
+#include "fragment.h"
 
 /***************************************************
  * GPS LEFT ARRAY
@@ -28,9 +29,11 @@ public:
    GPSLeftArray(Position& pos, Velocity& vel, Direction& dir) : Part(pos, vel, dir) {}
 
    // attributes
-   void rotate(bool clockwise = true);
    void draw(ogstream& gout) const override;
    double getRadius() const override { return radius; }
+   
+   // breaking apart
+   vector<Satellite*> breakApart() override;
 
    // operators
    GPSLeftArray& operator= (GPSLeftArray& rhs);

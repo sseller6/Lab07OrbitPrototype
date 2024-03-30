@@ -37,13 +37,12 @@ bool Satellite::isInside(Satellite& sat) const
  ***************************************************/
 bool Satellite::isInside(Earth& earth) const
 {
-   /*double x1 = pos.getPixelsX();
-   double x2 = sat.getPosition().getPixelsX();
+   double x1 = pos.getPixelsX();
+   double x2 = earth.getPos().getPixelsX();
    double y1 = pos.getPixelsY();
-   double y2 = sat.getPosition().getPixelsY();
+   double y2 = earth.getPos().getPixelsY();
    double distance = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-   return distance < radius + sat.getRadius();*/
-return false;
+   return distance < radius + 50.0;
 }
 
 /***************************************************

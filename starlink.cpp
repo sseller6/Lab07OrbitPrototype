@@ -22,21 +22,6 @@ Starlink& Starlink::operator= (Starlink& rhs)
 }
 
 /***************************************************
- * STARLINK : ROTATE
- ***************************************************/
-void Starlink::rotate(bool clockwise)
-{
-   if (clockwise)
-   {
-      dir += 0.01;
-   }
-   else
-   {
-      dir += -0.01;
-   }
-}
-
-/***************************************************
  * STARLINK : DRAW
  ***************************************************/
 void Starlink::draw(ogstream& gout) const

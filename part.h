@@ -24,6 +24,9 @@ public:
    Part() : Satellite() { }
    Part(Position &pos, Velocity &vel, Direction &dir) : Satellite(pos, vel, dir) { }
 
+   // overrides
+   void rotate(bool clockwise) override;
+   
    // virtuals
    virtual void draw(ogstream &gout) const override { }
 

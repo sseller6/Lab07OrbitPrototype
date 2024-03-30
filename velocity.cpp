@@ -26,3 +26,21 @@ void Velocity::computeNewVel(Acceleration& acc, double time)
    dx += acc.getDdx() * time;
    dy += acc.getDdy() * time;
 }
+
+/***************************************************
+ * VELOCITY : OPREATOR + OVERLOAD
+ ***************************************************/
+Velocity Velocity::operator+ (const Velocity & rhs) const
+{
+   return Velocity(rhs.dx + dx, rhs.dy + dy);
+}
+
+/***************************************************
+ * VELOCITY : OPREATOR += OVERLOAD
+ ***************************************************/
+Velocity& Velocity::operator+= (const Velocity& rhs)
+{
+   dx += rhs.dx;
+   dy += rhs.dy;
+   return *this;
+}
