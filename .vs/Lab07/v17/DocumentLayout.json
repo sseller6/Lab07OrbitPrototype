@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +26,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "testDragon.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp",
+              "RelativeDocumentMoniker": "testDragon.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp",
+              "RelativeToolTip": "testDragon.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-30T19:46:19.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "satellite.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.h",
-              "RelativeDocumentMoniker": "satellite.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.h",
-              "RelativeToolTip": "satellite.h",
-              "ViewState": "AQIAACwAAAAAAAAAAAAEwDUAAAAAAAAA",
+              "Title": "testDragon.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h",
+              "RelativeDocumentMoniker": "testDragon.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h",
+              "RelativeToolTip": "testDragon.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-29T22:30:32.164Z",
+              "WhenOpened": "2024-03-30T19:46:19.028Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "testSatellite.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp",
+              "RelativeDocumentMoniker": "testSatellite.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp",
+              "RelativeToolTip": "testSatellite.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-30T19:46:30.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "satellite.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.cpp",
-              "RelativeDocumentMoniker": "satellite.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\satellite.cpp",
-              "RelativeToolTip": "satellite.cpp",
-              "ViewState": "AQIAABYAAAAAAAAAAAAEwBwAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-29T22:05:49.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Lab07.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\Lab07.cpp",
-              "RelativeDocumentMoniker": "Lab07.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\Lab07.cpp",
-              "RelativeToolTip": "Lab07.cpp",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAcwLYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-29T22:02:16.001Z",
+              "Title": "testSatellite.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h",
+              "RelativeDocumentMoniker": "testSatellite.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h",
+              "RelativeToolTip": "testSatellite.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-30T19:46:30.021Z",
               "EditorCaption": ""
             }
           ]

@@ -14,6 +14,8 @@
 #include "acceleration.h"
 #include "whole.h"
 
+class TestSputnik;
+
 /***************************************************
  * SPUTNIK
  * The information for the child class, Sputnik.

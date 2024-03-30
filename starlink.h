@@ -15,6 +15,8 @@
 
 #include "whole.h"
 
+class TestStarLink;
+
 /***************************************************
  * STARLINK
  * All the code for the child class, starlink.

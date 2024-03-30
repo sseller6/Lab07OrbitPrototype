@@ -14,6 +14,8 @@
 #include "acceleration.h"
 #include "whole.h"
 
+class TestHubble;
+
 /***************************************************
  * HUBBLE
  * The blueprints for creating a hubble.

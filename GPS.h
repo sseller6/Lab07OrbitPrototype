@@ -14,6 +14,8 @@
 #include "acceleration.h"
 #include "whole.h"
 
+class TestGPS;
+
 /***************************************************
  * GPS
  * The blueprints for creaing a GPS.
