@@ -15,6 +15,8 @@
 #include "earth.h"
 #include "whole.h"
 
+class TestDreamChaser;
+
 /***************************************************
  * DREAM CHASER
  * The blueprints for the Dream Chaser.

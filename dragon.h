@@ -18,6 +18,8 @@
 
 #include "whole.h"
 
+class TestDragon;
+
 /***************************************************
  * DRAGON
  * All the information for the dragon.

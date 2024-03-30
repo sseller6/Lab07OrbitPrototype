@@ -18,6 +18,8 @@
 #include "GPSRightArray.h"
 #include "fragment.h"
 
+class TestGPS;
+
 /***************************************************
  * GPS
  * The blueprints for creaing a GPS.

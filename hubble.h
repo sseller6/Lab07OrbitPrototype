@@ -18,6 +18,8 @@
 #include "hubbleLeftArray.h"
 #include "hubbleRightArray.h"
 
+class TestHubble;
+
 /***************************************************
  * HUBBLE
  * The blueprints for creating a hubble.

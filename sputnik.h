@@ -15,6 +15,8 @@
 #include "whole.h"
 #include "fragment.h"
 
+class TestSputnik;
+
 /***************************************************
  * SPUTNIK
  * The information for the child class, Sputnik.
