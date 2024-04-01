@@ -10,6 +10,12 @@
 #include "test.h"
 #include "testPosition.h"
 #include "testSatellite.h"
+#include "testGPS.h"
+#include "testDragon.h"
+#include "testDreamChaser.h"
+#include "testHubble.h"
+#include "testSputnik.h"
+#include "testStarLink.h"
 
 /*****************************************************************
  * TEST RUNNER
@@ -19,4 +25,10 @@ void testRunner()
 {
    TestPosition().run();
    TestSatellite().run();
+   TestGPS().run();
+   TestDragon().run();
+   TestDreamChaser().run();
+   TestHubble().run();
+   TestSputnik().run();
+   TestStarLink().run();
 }

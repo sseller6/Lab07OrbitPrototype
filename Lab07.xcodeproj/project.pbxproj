@@ -15,6 +15,12 @@
 		C11C7EB525780B6500EA4B2E /* uiDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11C7EAD25780B6000EA4B2E /* uiDraw.cpp */; };
 		C179C6C127E375AF00E3E514 /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C179C6C027E375AF00E3E514 /* position.cpp */; };
 		E71A39B42BB8945B00686FF7 /* fragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39B32BB8939C00686FF7 /* fragment.cpp */; };
+		E71A39C12BB8C7AD00686FF7 /* testDragon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39BF2BB8C6DE00686FF7 /* testDragon.cpp */; };
+		E71A39C22BB8C7AD00686FF7 /* testDreamChaser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39B82BB8C6DD00686FF7 /* testDreamChaser.cpp */; };
+		E71A39C32BB8C7AD00686FF7 /* testGPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39B52BB8C6DC00686FF7 /* testGPS.cpp */; };
+		E71A39C42BB8C7AD00686FF7 /* testHubble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39BB2BB8C6DE00686FF7 /* testHubble.cpp */; };
+		E71A39C52BB8C7AD00686FF7 /* testSputnik.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39BC2BB8C6DE00686FF7 /* testSputnik.cpp */; };
+		E71A39C62BB8C7AD00686FF7 /* testStarLink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E71A39B92BB8C6DD00686FF7 /* testStarLink.cpp */; };
 		E75AF30D2B894E8E00C37067 /* acceleration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF30A2B894E0C00C37067 /* acceleration.cpp */; };
 		E75AF3112B89560C00C37067 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E75AF30E2B89537A00C37067 /* velocity.cpp */; };
 		E79080522BB34F75004BCFD9 /* direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79080502BB34F60004BCFD9 /* direction.cpp */; };
@@ -70,6 +76,18 @@
 		C179C6C227E375D600E3E514 /* position.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = position.h; sourceTree = "<group>"; };
 		E71A39B22BB8931300686FF7 /* fragment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fragment.h; sourceTree = "<group>"; };
 		E71A39B32BB8939C00686FF7 /* fragment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fragment.cpp; sourceTree = "<group>"; };
+		E71A39B52BB8C6DC00686FF7 /* testGPS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testGPS.cpp; sourceTree = "<group>"; };
+		E71A39B62BB8C6DD00686FF7 /* testHubble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testHubble.h; sourceTree = "<group>"; };
+		E71A39B72BB8C6DD00686FF7 /* testGPS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testGPS.h; sourceTree = "<group>"; };
+		E71A39B82BB8C6DD00686FF7 /* testDreamChaser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testDreamChaser.cpp; sourceTree = "<group>"; };
+		E71A39B92BB8C6DD00686FF7 /* testStarLink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testStarLink.cpp; sourceTree = "<group>"; };
+		E71A39BA2BB8C6DD00686FF7 /* testSputnik.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testSputnik.h; sourceTree = "<group>"; };
+		E71A39BB2BB8C6DE00686FF7 /* testHubble.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testHubble.cpp; sourceTree = "<group>"; };
+		E71A39BC2BB8C6DE00686FF7 /* testSputnik.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testSputnik.cpp; sourceTree = "<group>"; };
+		E71A39BD2BB8C6DE00686FF7 /* testStarLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testStarLink.h; sourceTree = "<group>"; };
+		E71A39BE2BB8C6DE00686FF7 /* testDragon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testDragon.h; sourceTree = "<group>"; };
+		E71A39BF2BB8C6DE00686FF7 /* testDragon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = testDragon.cpp; sourceTree = "<group>"; };
+		E71A39C02BB8C6DE00686FF7 /* testDreamChaser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testDreamChaser.h; sourceTree = "<group>"; };
 		E75AF30A2B894E0C00C37067 /* acceleration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acceleration.cpp; sourceTree = "<group>"; };
 		E75AF30C2B894E6E00C37067 /* acceleration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceleration.h; sourceTree = "<group>"; };
 		E75AF30E2B89537A00C37067 /* velocity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
@@ -141,6 +159,18 @@
 		C11C7E8D2578098A00EA4B2E = {
 			isa = PBXGroup;
 			children = (
+				E71A39BF2BB8C6DE00686FF7 /* testDragon.cpp */,
+				E71A39BE2BB8C6DE00686FF7 /* testDragon.h */,
+				E71A39B82BB8C6DD00686FF7 /* testDreamChaser.cpp */,
+				E71A39C02BB8C6DE00686FF7 /* testDreamChaser.h */,
+				E71A39B52BB8C6DC00686FF7 /* testGPS.cpp */,
+				E71A39B72BB8C6DD00686FF7 /* testGPS.h */,
+				E71A39BB2BB8C6DE00686FF7 /* testHubble.cpp */,
+				E71A39B62BB8C6DD00686FF7 /* testHubble.h */,
+				E71A39BC2BB8C6DE00686FF7 /* testSputnik.cpp */,
+				E71A39BA2BB8C6DD00686FF7 /* testSputnik.h */,
+				E71A39B92BB8C6DD00686FF7 /* testStarLink.cpp */,
+				E71A39BD2BB8C6DE00686FF7 /* testStarLink.h */,
 				E71A39B32BB8939C00686FF7 /* fragment.cpp */,
 				E71A39B22BB8931300686FF7 /* fragment.h */,
 				E79080822BB4D3D7004BCFD9 /* GPSRightArray.cpp */,
@@ -285,6 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71A39C12BB8C7AD00686FF7 /* testDragon.cpp in Sources */,
+				E71A39C22BB8C7AD00686FF7 /* testDreamChaser.cpp in Sources */,
+				E71A39C32BB8C7AD00686FF7 /* testGPS.cpp in Sources */,
+				E71A39C42BB8C7AD00686FF7 /* testHubble.cpp in Sources */,
+				E71A39C52BB8C7AD00686FF7 /* testSputnik.cpp in Sources */,
+				E71A39C62BB8C7AD00686FF7 /* testStarLink.cpp in Sources */,
 				E71A39B42BB8945B00686FF7 /* fragment.cpp in Sources */,
 				E79080832BB4D402004BCFD9 /* GPSRightArray.cpp in Sources */,
 				E79080802BB4D37D004BCFD9 /* GPSLeftArray.cpp in Sources */,

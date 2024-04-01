@@ -20,9 +20,7 @@
 void TestDragon::tooFarToCollide()
 {
    // SETUP
-   Dragon * d = new Dragon();
-   d->pos.setMetersX(100);
-   d->pos.getMetersY(100);
+   
    // EXERCISE
 
    // VERIFY
