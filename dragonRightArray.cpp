@@ -7,6 +7,8 @@
  *    The Dragon right array breaks off of the Dragon.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "dragonRightArray.h"
 
 /***************************************************

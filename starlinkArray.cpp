@@ -7,6 +7,8 @@
  *    The Starlink array breaks off of the Starlink.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "starlinkArray.h"
 
 /***************************************************

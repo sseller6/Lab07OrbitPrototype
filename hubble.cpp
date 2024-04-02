@@ -7,6 +7,8 @@
  *    The Hubble inherits from the Whole class.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "hubble.h"
 
 /***************************************************

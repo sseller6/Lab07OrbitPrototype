@@ -7,6 +7,8 @@
  *    The Hubble telescope breaks off of the Hubble.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "hubbleTelescope.h"
 
 /***************************************************

@@ -1,15 +1,26 @@
-﻿  GPS.cpp
-  Lab07.cpp
+﻿  acceleration.cpp
+  dragon.cpp
+  dragonBody.cpp
+  dragonLeftArray.cpp
+  dragonRightArray.cpp
   dreamChaser.cpp
+  GPSBody.cpp
+  GPSLeftArray.cpp
+  GPSRightArray.cpp
   hubble.cpp
+  hubbleComputer.cpp
+  hubbleLeftArray.cpp
+  hubbleRightArray.cpp
+  hubbleTelescope.cpp
+  Lab07.cpp
+  GPS.cpp
   sputnik.cpp
   starlink.cpp
-  testDragon.cpp
-  testDreamChaser.cpp
-  testGPS.cpp
-  testHubble.cpp
-  testSatellite.cpp
-  testSputnik.cpp
-  testStarLink.cpp
+  starlinkArray.cpp
+  starlinkBody.cpp
   Generating Code...
-  Lab07.vcxproj -> C:\programmingProjects\PublicRepos\OrbitLab\x64\Debug\Lab07.exe
+  Compiling...
+  test.cpp
+  whole.cpp
+  Generating Code...
+  Lab07.vcxproj -> C:\programmingProjects\PublicRepos\orbitSimulator\x64\Debug\Lab07.exe

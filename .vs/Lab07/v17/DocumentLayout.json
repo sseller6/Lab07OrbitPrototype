@@ -1,22 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\",
+  "WorkspaceRootPath": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:starlinkBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:starlinkArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\sputnik.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:sputnik.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPS.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleTelescope.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubbleTelescope.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubbleRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubbleLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleComputer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubbleComputer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPSRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPSLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:GPSBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragonRightArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragonLeftArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragonBody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\direction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:direction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:starlinkArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\projectile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:projectile.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragonLeftArray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dragonBody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testSatellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,60 +115,326 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "starlinkBody.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkBody.cpp",
+              "RelativeDocumentMoniker": "starlinkBody.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkBody.cpp",
+              "RelativeToolTip": "starlinkBody.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:43.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "starlinkArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.cpp",
+              "RelativeDocumentMoniker": "starlinkArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.cpp*",
+              "RelativeToolTip": "starlinkArray.cpp*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:39.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GPS.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPS.cpp",
+              "RelativeDocumentMoniker": "GPS.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPS.cpp",
+              "RelativeToolTip": "GPS.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:30.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hubbleTelescope.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleTelescope.cpp",
+              "RelativeDocumentMoniker": "hubbleTelescope.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleTelescope.cpp",
+              "RelativeToolTip": "hubbleTelescope.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:26.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "hubbleRightArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleRightArray.cpp",
+              "RelativeDocumentMoniker": "hubbleRightArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleRightArray.cpp",
+              "RelativeToolTip": "hubbleRightArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:22.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "hubbleLeftArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleLeftArray.cpp",
+              "RelativeDocumentMoniker": "hubbleLeftArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleLeftArray.cpp",
+              "RelativeToolTip": "hubbleLeftArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:19.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "hubbleComputer.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleComputer.cpp",
+              "RelativeDocumentMoniker": "hubbleComputer.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubbleComputer.cpp",
+              "RelativeToolTip": "hubbleComputer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:07.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "hubble.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubble.cpp",
+              "RelativeDocumentMoniker": "hubble.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\hubble.cpp",
+              "RelativeToolTip": "hubble.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:09:03.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GPSRightArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSRightArray.cpp",
+              "RelativeDocumentMoniker": "GPSRightArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSRightArray.cpp",
+              "RelativeToolTip": "GPSRightArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:58.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GPSLeftArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSLeftArray.cpp",
+              "RelativeDocumentMoniker": "GPSLeftArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSLeftArray.cpp",
+              "RelativeToolTip": "GPSLeftArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:54.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dragonRightArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonRightArray.cpp",
+              "RelativeDocumentMoniker": "dragonRightArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonRightArray.cpp",
+              "RelativeToolTip": "dragonRightArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:44.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dragonLeftArray.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.cpp",
+              "RelativeDocumentMoniker": "dragonLeftArray.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.cpp",
+              "RelativeToolTip": "dragonLeftArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:40.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "dragonBody.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.cpp",
+              "RelativeDocumentMoniker": "dragonBody.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.cpp",
+              "RelativeToolTip": "dragonBody.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:31.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GPSBody.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSBody.cpp",
+              "RelativeDocumentMoniker": "GPSBody.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\GPSBody.cpp",
+              "RelativeToolTip": "GPSBody.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:08:30.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "direction.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\direction.h",
+              "RelativeDocumentMoniker": "direction.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\direction.h",
+              "RelativeToolTip": "direction.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:08:01.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "starlinkArray.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.h",
+              "RelativeDocumentMoniker": "starlinkArray.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\starlinkArray.h",
+              "RelativeToolTip": "starlinkArray.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:07:55.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\test.cpp",
+              "RelativeDocumentMoniker": "test.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\test.cpp",
+              "RelativeToolTip": "test.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:07:54.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "projectile.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\projectile.h",
+              "RelativeDocumentMoniker": "projectile.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\projectile.h",
+              "RelativeToolTip": "projectile.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:04:06.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sputnik.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\sputnik.cpp",
+              "RelativeDocumentMoniker": "sputnik.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\sputnik.cpp",
+              "RelativeToolTip": "sputnik.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:07:51.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dragon.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragon.cpp",
+              "RelativeDocumentMoniker": "dragon.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragon.cpp",
+              "RelativeToolTip": "dragon.cpp",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv0EAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T20:07:10.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "dragonLeftArray.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.h",
+              "RelativeDocumentMoniker": "dragonLeftArray.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonLeftArray.h",
+              "RelativeToolTip": "dragonLeftArray.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:07:02.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dragonBody.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.h",
+              "RelativeDocumentMoniker": "dragonBody.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\dragonBody.h",
+              "RelativeToolTip": "dragonBody.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:06:50.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "satellite.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\satellite.h",
+              "RelativeDocumentMoniker": "satellite.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\satellite.h",
+              "RelativeToolTip": "satellite.h",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-02T20:04:25.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "testDragon.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.cpp",
               "RelativeDocumentMoniker": "testDragon.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.cpp",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.cpp",
               "RelativeToolTip": "testDragon.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-30T19:46:19.971Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 24,
               "Title": "testDragon.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h",
+              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.h",
               "RelativeDocumentMoniker": "testDragon.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testDragon.h",
+              "ToolTip": "C:\\programmingProjects\\PublicRepos\\orbitSimulator\\testDragon.h",
               "RelativeToolTip": "testDragon.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-30T19:46:19.028Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "testSatellite.cpp",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp",
-              "RelativeDocumentMoniker": "testSatellite.cpp",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.cpp",
-              "RelativeToolTip": "testSatellite.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-30T19:46:30.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "testSatellite.h",
-              "DocumentMoniker": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h",
-              "RelativeDocumentMoniker": "testSatellite.h",
-              "ToolTip": "C:\\programmingProjects\\PublicRepos\\OrbitLab\\testSatellite.h",
-              "RelativeToolTip": "testSatellite.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-30T19:46:30.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T19:46:19.028Z"
             }
           ]
         }

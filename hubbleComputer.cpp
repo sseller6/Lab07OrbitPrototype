@@ -7,6 +7,8 @@
  *    The Hubble computer breaks off of the Hubble.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "hubbleComputer.h"
 
 /***************************************************

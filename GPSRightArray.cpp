@@ -7,6 +7,8 @@
  *    The GPS right array breaks off of the GPS.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "GPSRightArray.h"
 
 /***************************************************

@@ -7,6 +7,8 @@
  *    The GPS body breaks off of the GPS.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "GPSBody.h"
 
 /***************************************************

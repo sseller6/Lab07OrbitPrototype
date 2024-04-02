@@ -8,6 +8,7 @@
  ************************************************************************/
 
 #pragma once
+#include <vector>
 #include "uiDraw.h"
 #include "position.h"
 #include "velocity.h"

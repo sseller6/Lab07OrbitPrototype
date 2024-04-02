@@ -9,6 +9,7 @@
  ************************************************************************/
 
 #pragma once
+#include <vector>
 #include "uiDraw.h"
 #include "uiInteract.h"
 #include "position.h"

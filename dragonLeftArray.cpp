@@ -7,6 +7,8 @@
  *    The Dragon left array breaks off of the Dragon.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "dragonLeftArray.h"
 /***************************************************
  * DRAGON LEFT ARRAY : OPERATOR = OVERLOAD

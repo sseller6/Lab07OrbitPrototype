@@ -7,6 +7,8 @@
  *    The Starlink body breaks off of the Starlink.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "starlinkBody.h"
 
 /***************************************************

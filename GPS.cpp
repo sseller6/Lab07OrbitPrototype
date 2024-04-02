@@ -7,6 +7,8 @@
  *    The GPS inherits from the Whole class.
  ************************************************************************/
 
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "GPS.h"
 
 /***************************************************
