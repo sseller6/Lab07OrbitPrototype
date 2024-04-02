@@ -146,6 +146,10 @@ void callBack(const Interface* pUI, void* p)
          pDemo->ship->rotate(false);
       if (pUI->isRight())
          pDemo->ship->rotate();
+      
+      // shoot
+      if (pUI->isSpace())
+         pDemo->sats.push_back(pDemo->ship->shoot());
 
 
       //

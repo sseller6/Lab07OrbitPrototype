@@ -141,6 +141,7 @@
 		E790807F2BB4D32A004BCFD9 /* GPSLeftArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GPSLeftArray.cpp; sourceTree = "<group>"; };
 		E79080812BB4D3AA004BCFD9 /* GPSRightArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPSRightArray.h; sourceTree = "<group>"; };
 		E79080822BB4D3D7004BCFD9 /* GPSRightArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GPSRightArray.cpp; sourceTree = "<group>"; };
+		E7ED273B2BBC9630008F86F6 /* projectile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = projectile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +160,7 @@
 		C11C7E8D2578098A00EA4B2E = {
 			isa = PBXGroup;
 			children = (
+				E7ED273B2BBC9630008F86F6 /* projectile.h */,
 				E71A39BF2BB8C6DE00686FF7 /* testDragon.cpp */,
 				E71A39BE2BB8C6DE00686FF7 /* testDragon.h */,
 				E71A39B82BB8C6DD00686FF7 /* testDreamChaser.cpp */,

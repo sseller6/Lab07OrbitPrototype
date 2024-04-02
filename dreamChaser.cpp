@@ -68,6 +68,30 @@ void DreamChaser::rotate(bool clockwise)
 }
 
 /***************************************************
+ * DREAM CHASER : SHOOT
+ ***************************************************/
+Satellite* DreamChaser::shoot() const
+{
+   // calculate starting position
+   double shipXPx = pos.getPixelsX();
+   double shipYPx = pos.getPixelsY();
+   double projXPx = shipXPx + 19 * sin(dir.getAngle());
+   double projYPx = shipYPx + 19 * cos(dir.getAngle());
+   Position projPos = Position();
+   projPos.setPixelsX(projXPx);
+   projPos.setPixelsY(projYPx);
+   
+   // calculate velocity
+   Velocity projVel = vel + Velocity(9000 * sin(dir.getAngle()), 9000 * cos(dir.getAngle()));
+   
+   // dummy direction
+   Direction projDir = Direction(0.0);
+   
+   Projectile * proj = new Projectile(projPos, projVel, projDir);
+   return proj;
+}
+
+/***************************************************
  * DREAM CHASER : DRAW
  ***************************************************/
 void DreamChaser::draw(ogstream& gout) const

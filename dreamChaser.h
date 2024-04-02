@@ -14,6 +14,7 @@
 #include "acceleration.h"
 #include "earth.h"
 #include "whole.h"
+#include "projectile.h"
 
 class TestDreamChaser;
 
@@ -34,6 +35,9 @@ public:
    void move(float time, Earth& earth) override;
    void draw(ogstream& gout) const override;
    double getRadius() const override { return radius; }
+   
+   // shooting
+   Satellite* shoot() const;
 
    // operators
    DreamChaser& operator= (DreamChaser& rhs);
